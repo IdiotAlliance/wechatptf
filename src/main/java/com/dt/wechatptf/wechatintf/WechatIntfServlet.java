@@ -11,6 +11,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.dt.wechatptf.util.Encoder;
+import com.dt.wechatptf.util.WechatXMLUtil;
+import com.dt.wechatptf.util.WechatXMLUtil.WechatMsg;
 
 /**
  * Servlet implementation class WechatIntfServlet
@@ -34,6 +36,7 @@ public class WechatIntfServlet extends HttpServlet {
 		
 		String token = "wechatptf";
 		
+		String userId    = request.getContextPath();
 		String signature = request.getParameter("signature");
 		String timestamp = request.getParameter("timestamp");
 		String nonce     = request.getParameter("nonce");
@@ -55,17 +58,17 @@ public class WechatIntfServlet extends HttpServlet {
 				}
 				else local_sig = token + timestamp + nonce;
 			}
+			
+			// compare sha1 codes
 			if(signature != null && signature.equals(Encoder.encodeSHA1(local_sig))){
 				response.getWriter().write(echostr);
 				response.flushBuffer();
 				return;
 			}
 		}
-		else{
-			response.getWriter().write(echostr + "1");
-			response.getWriter().flush();
-			return;
-		}
+		response.getWriter().write(echostr + "1");
+		response.getWriter().flush();
+		return;
 		
 	}
 
@@ -83,7 +86,21 @@ public class WechatIntfServlet extends HttpServlet {
 			input += temp;
 		
 		// parse xml string
-		
+		WechatMsg msg     = WechatXMLUtil.parseMsg(input);
+		String fromUser   = msg.valueOf(WechatXMLUtil.KEY_FROM_USER_LOWER);
+		String toUser     = msg.valueOf(WechatXMLUtil.KEY_TO_USER_LOWER);
+		String createTime = msg.valueOf(WechatXMLUtil.KEY_CREATE_TIME_LOWER);
+		switch(msg.getType()){
+		case WechatXMLUtil.MSG_TYPE_TEXT:{
+			break;
+		}
+		case WechatXMLUtil.MSG_TYPE_GEO:{
+			break;
+		}
+		case WechatXMLUtil.MSG_TYPE_EVENT:{
+			break;
+		}
+		}
 	}
 	
 }
