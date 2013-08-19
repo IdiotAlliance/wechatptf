@@ -150,6 +150,10 @@ public class WechatXMLUtil {
 			return new ListMsgBuilder();
 		}
 		
+		public static MsgBuilder createNewsItemBuilder(){
+			return new NewsItemBuilder();
+		}
+		
 		private static class BaseBuilder implements MsgBuilder{
 			
 			protected Map<String, String> values = new HashMap<String, String>(); 
@@ -183,7 +187,7 @@ public class WechatXMLUtil {
 			@Override
 			public String build() {
 				String result = super.build();
-				result += "<" + KEY_MSG_TYPE + "><![CDATA[" + values.get(KEY_MSG_TYPE) + "]]></" + KEY_MSG_TYPE + ">" +
+				result += "<" + KEY_MSG_TYPE + "><![CDATA[" + MSG_TYPES[MSG_TYPE_TEXT] + "]]></" + KEY_MSG_TYPE + ">" +
 						  "<" + KEY_CONTENT + "><![CDATA[" + values.get(KEY_CONTENT) + "]]></" + KEY_CONTENT + ">" + 
 						  "</xml>";
 				return result;
@@ -193,16 +197,32 @@ public class WechatXMLUtil {
 		private static class MusicMsgBuilder extends BaseBuilder{
 			@Override
 			public String build() {
-				// TODO Auto-generated method stub
-				return null;
+				String result = super.build();
+				result += "<" + KEY_MSG_TYPE + "><![CDATA[" + MSG_TYPES[MSG_TYPE_MUSIC] + "]]></" + KEY_MSG_TYPE + ">" +
+				          "<Music>" +
+						  "<" + KEY_TITLE + "><![CDATA[" + values.get(KEY_TITLE) + "]]></" + KEY_TITLE + ">" +
+				          "<" + KEY_DESC + "><![CDATA[" + values.get(KEY_DESC) + "]]></" + KEY_DESC + ">" +
+				          "<" + KEY_MUSIC_URL + "><!CDATA[" + values.get(KEY_MUSIC_URL) + "]]></" + KEY_MUSIC_URL + ">" +
+				          "<" + KEY_HQMUSIC_URL + "><![CDATA[" + values.get(KEY_HQMUSIC_URL) + "]]></" + KEY_HQMUSIC_URL + ">" +
+				          "</Music>" +
+				          "</xml>"; 
+			    return result;
 			}
 		}
 		
 		private static class ListMsgBuilder extends BaseBuilder{
 			@Override
 			public String build() {
-				// TODO Auto-generated method stub
-				return null;
+				String result = super.build();
+				result += "<" + KEY_MSG_TYPE + "><![CDATA[" + MSG_TYPES[MSG_TYPE_NEWS] + "]]></" + KEY_MSG_TYPE + ">" +
+						  "<" + KEY_ARTICLE_COUNT + ">" + items.get(KEY_ITEM).size() + "</" + KEY_ARTICLE_COUNT + ">" +
+						  "<" + KEY_ARTICLES + ">";
+				for(String value: items.get(KEY_ITEM)){
+					result += "<" + KEY_ITEM + ">" + value + "</" + KEY_ITEM + ">";
+				}
+				result += "</" + KEY_ARTICLES + ">" +
+						  "</xml>";
+				return result;
 			}
 		}
 		
@@ -225,8 +245,11 @@ public class WechatXMLUtil {
 		private static class NewsItemBuilder extends BaseBuilder{
 			@Override
 			public String build() {
-				// TODO Auto-generated method stub
-				return null;
+				String result = "<" + KEY_TITLE + "><![CDATA[" + values.get(KEY_TITLE) + "]]></" + KEY_TITLE + ">" +
+							    "<" + KEY_DESC + "><![CDATA[" + values.get(KEY_DESC) + "]]></" + KEY_DESC + ">" +
+							    "<" + KEY_PIC_URL + "><![CDATA[" + values.get(KEY_PIC_URL) + "]]></" + KEY_PIC_URL + ">" +
+							    "<" + KEY_URL + "><![CDATA[" + values.get(KEY_URL) + "]]></" + KEY_URL + ">";
+				return result;
 			}
 		}
 	}

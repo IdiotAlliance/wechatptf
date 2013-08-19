@@ -55,4 +55,9 @@ public class WechatXMLUtilTest {
 		
 	}
 	
+	@Test
+	public void testBuildMsg(){
+		
+	}
+	
 }
