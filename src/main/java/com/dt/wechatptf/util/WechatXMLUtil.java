@@ -174,8 +174,7 @@ public class WechatXMLUtil {
 				String result = "<xml>" + 
 								"<" + KEY_TO_USER + "><![CDATA[" + values.get(KEY_TO_USER) + "]]></" + KEY_TO_USER + ">" +
 								"<" + KEY_FROM_USER + "><![CDATA[" + values.get(KEY_FROM_USER) + "]]></" + KEY_FROM_USER + ">" + 
-								"<" + KEY_CREATE_TIME + ">" + values.get(KEY_CREATE_TIME) + "</" + KEY_CREATE_TIME + ">" +
-								"<" + KEY_MSG_TYPE + "><![CDATA[" + values.get(KEY_MSG_TYPE) + "]]></" + KEY_MSG_TYPE + ">";
+								"<" + KEY_CREATE_TIME + ">" + values.get(KEY_CREATE_TIME) + "</" + KEY_CREATE_TIME + ">";
 				return result;
 			}
 		}
@@ -183,8 +182,11 @@ public class WechatXMLUtil {
 		private static class TextMsgBuilder extends BaseBuilder{
 			@Override
 			public String build() {
-				// TODO Auto-generated method stub
-				return null;
+				String result = super.build();
+				result += "<" + KEY_MSG_TYPE + "><![CDATA[" + values.get(KEY_MSG_TYPE) + "]]></" + KEY_MSG_TYPE + ">" +
+						  "<" + KEY_CONTENT + "><![CDATA[" + values.get(KEY_CONTENT) + "]]></" + KEY_CONTENT + ">" + 
+						  "</xml>";
+				return result;
 			}
 		}
 		
