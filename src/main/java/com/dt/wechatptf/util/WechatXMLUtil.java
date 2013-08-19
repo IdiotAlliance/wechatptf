@@ -159,13 +159,11 @@ public class WechatXMLUtil {
 			protected Map<String, String> values = new HashMap<String, String>(); 
 			protected Map<String, List<String>> items = new HashMap<String, List<String>>();
 			
-			@Override
 			public MsgBuilder append(String key, String value) {
 				values.put(key, value);
 				return this;
 			}
 			
-			@Override
 			public MsgBuilder appendItem(String key, String value) {
 				if(!items.containsKey(key))
 					items.put(key, new ArrayList<String>());
@@ -173,7 +171,6 @@ public class WechatXMLUtil {
 				return this;
 			}
 			
-			@Override
 			public String build() {
 				String result = "<xml>" + 
 								"<" + KEY_TO_USER + "><![CDATA[" + values.get(KEY_TO_USER) + "]]></" + KEY_TO_USER + ">" +
