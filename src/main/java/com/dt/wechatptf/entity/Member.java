@@ -1,18 +1,19 @@
 package com.dt.wechatptf.entity;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class Member {
 	
 	int id;
 	String name;
-	int gender;		//ĞÔ±ğ£¬0ÄĞ£¬1Å®£¬2Î´Öª
+	String memberid;//ä¼šå‘˜å·
+	int companyid;	//æ‰€å±ä¼ä¸šid
+	int gender;		//æ€§åˆ«ï¼Œ0ç”·ï¼Œ1å¥³ï¼Œ3æœªçŸ¥	
 	Date birthday;
 	String address;
 	String mail;
-	String weiid;	//Î¢ĞÅºÅ
+	String weiid;	//å¾®ä¿¡å·
 	String phone;
-	int companyid;	//ËùÊôÆóÒµid
 
 	public int getId() {
 		return id;
@@ -26,6 +27,20 @@ public class Member {
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public String getMemberid() {
+		return memberid;
+	}
+	public void setMemberid(String memberid) {
+		this.memberid = memberid;
+	}
+	
+	public int getCompanyid() {
+		return companyid;
+	}
+	public void setCompanyid(int companyid) {
+		this.companyid = companyid;
 	}
 	
 	public int getGender() {
@@ -69,13 +84,6 @@ public class Member {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	
-	public int getCompanyid() {
-		return companyid;
-	}
-	public void setCompanyid(int companyid) {
-		this.companyid = companyid;
-	}
-	
-	
+
+		
 }
