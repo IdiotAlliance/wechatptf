@@ -48,7 +48,7 @@ public class WechatXMLUtil {
 	public static final String KEY_HQMUSIC_URL = "HQMusicUrl";
 	public static final String KEY_ARTICLE_COUNT = "ArticleCount";
 	public static final String KEY_ARTICLES    = "Articles";
-	public static final String KEY_ITEM        = "Item";
+	public static final String KEY_ITEM        = "item";
 	
 	// jsoup auto transform tags to lower case
 	public static final String KEY_FROM_USER_LOWER   = "fromusername";

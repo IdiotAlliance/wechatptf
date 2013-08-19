@@ -97,7 +97,17 @@ public class WechatXMLUtilTest {
 	
 	@Test
 	public void testBuildMusicMsg(){
-		
+		String msg = WechatXMLUtil.WechatMsgBuilder
+				.createMusicMsgBuilder()
+				.append(WechatXMLUtil.KEY_FROM_USER, "123123123")
+				.append(WechatXMLUtil.KEY_TO_USER, "321321321")
+				.append(WechatXMLUtil.KEY_MSG_TYPE, WechatXMLUtil.MSG_TYPES[WechatXMLUtil.MSG_TYPE_TEXT])
+				.append(WechatXMLUtil.KEY_CREATE_TIME, System.currentTimeMillis() + "")
+				.append(WechatXMLUtil.KEY_TITLE, "夜夜夜夜")
+				.append(WechatXMLUtil.KEY_MUSIC_URL, "http://music.baidu.com/song/23152631")
+				.append(WechatXMLUtil.KEY_HQMUSIC_URL, "http://music.baidu.com/song/23152631")
+				.build();
+		System.out.println(msg);
 	}
 	
 	@Test
