@@ -146,8 +146,8 @@ public class WechatXMLUtil {
 			return new VideoMsgBuilder();
 		}
 		
-		public static MsgBuilder createListMsgBuilder(){
-			return new ListMsgBuilder();
+		public static MsgBuilder createNewsMsgBuilder(){
+			return new NewsMsgBuilder();
 		}
 		
 		public static MsgBuilder createNewsItemBuilder(){
@@ -207,7 +207,7 @@ public class WechatXMLUtil {
 			}
 		}
 		
-		private static class ListMsgBuilder extends BaseBuilder{
+		private static class NewsMsgBuilder extends BaseBuilder{
 			@Override
 			public String build() {
 				String result = super.build();
@@ -251,7 +251,7 @@ public class WechatXMLUtil {
 		}
 	}
 	
-	protected interface MsgBuilder{
+	public interface MsgBuilder{
 		/**
 		 * append a simple element to the current message
 		 * @param key

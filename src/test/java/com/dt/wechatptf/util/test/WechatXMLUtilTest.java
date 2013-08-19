@@ -56,8 +56,61 @@ public class WechatXMLUtilTest {
 	}
 	
 	@Test
-	public void testBuildMsg(){
+	public void testBuildNewsItem(){
+		String item = WechatXMLUtil.WechatMsgBuilder
+			.createNewsItemBuilder()
+			.append(WechatXMLUtil.KEY_TITLE, "test")
+			.append(WechatXMLUtil.KEY_DESC, "测试消息")
+			.append(WechatXMLUtil.KEY_URL, "http://www.baidu.com")
+			.append(WechatXMLUtil.KEY_PIC_URL, "http://img1.gtimg.com/nice_mb/4b/07/27269.jpg")
+			.build();
+		System.out.println(item);
+	}
+	
+	@Test
+	public void testBuildNewsList(){
+		String item1 = WechatXMLUtil.WechatMsgBuilder
+				.createNewsItemBuilder()
+				.append(WechatXMLUtil.KEY_TITLE, "test1")
+				.append(WechatXMLUtil.KEY_DESC, "测试消息1")
+				.append(WechatXMLUtil.KEY_URL, "http://www.baidu.com")
+				.append(WechatXMLUtil.KEY_PIC_URL, "http://img1.gtimg.com/nice_mb/4b/07/27269.jpg")
+				.build();
+		String item2 = WechatXMLUtil.WechatMsgBuilder
+				.createNewsItemBuilder()
+				.append(WechatXMLUtil.KEY_TITLE, "test2")
+				.append(WechatXMLUtil.KEY_DESC, "测试消息2")
+				.append(WechatXMLUtil.KEY_URL, "http://www.baidu.com")
+				.append(WechatXMLUtil.KEY_PIC_URL, "http://img1.gtimg.com/nice_mb/4b/07/27269.jpg")
+				.build();
+		String msg = WechatXMLUtil.WechatMsgBuilder
+				.createNewsMsgBuilder()
+				.append(WechatXMLUtil.KEY_FROM_USER, "123123123")
+				.append(WechatXMLUtil.KEY_TO_USER, "321321321")
+				.append(WechatXMLUtil.KEY_MSG_TYPE, WechatXMLUtil.MSG_TYPES[WechatXMLUtil.MSG_TYPE_NEWS])
+				.append(WechatXMLUtil.KEY_CREATE_TIME, System.currentTimeMillis() + "")
+				.appendItem(WechatXMLUtil.KEY_ITEM, item1)
+				.appendItem(WechatXMLUtil.KEY_ITEM, item2)
+				.build();
+		System.out.println(msg);
+	}
+	
+	@Test
+	public void testBuildMusicMsg(){
 		
+	}
+	
+	@Test
+	public void testBuildTestMsg(){
+		String msg = WechatXMLUtil.WechatMsgBuilder
+				.createTextMsgBuilder()
+				.append(WechatXMLUtil.KEY_FROM_USER, "123123123")
+				.append(WechatXMLUtil.KEY_TO_USER, "321321321")
+				.append(WechatXMLUtil.KEY_MSG_TYPE, WechatXMLUtil.MSG_TYPES[WechatXMLUtil.MSG_TYPE_TEXT])
+				.append(WechatXMLUtil.KEY_CREATE_TIME, System.currentTimeMillis() + "")
+				.append(WechatXMLUtil.KEY_CONTENT, "测试测试测试测试！")
+				.build();
+		System.out.println(msg);
 	}
 	
 }
