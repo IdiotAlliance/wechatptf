@@ -5,8 +5,8 @@ import java.sql.Date;
 public class Member {
 	
 	int id;
-	String name;
 	String memberid;//会员号
+	String name;
 	int gender;		//性别，0男，1女，3未知	
 	Date birthday;
 	String address;
@@ -76,6 +76,13 @@ public class Member {
 	}
 	public void setPhone(String phone) {
 		this.phone = phone;
+	}
+	
+	public int getPoints() {
+		return points;
+	}
+	public void setPoints(int points) {
+		this.points = points;
 	}
 
 		
