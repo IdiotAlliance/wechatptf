@@ -7,13 +7,13 @@ public class Member {
 	int id;
 	String name;
 	String memberid;//会员号
+	int companyid;	//所属企业id
 	int gender;		//性别，0男，1女，3未知	
 	Date birthday;
 	String address;
 	String mail;
 	String weiid;	//微信号
 	String phone;
-	int points;
 
 	public int getId() {
 		return id;
@@ -34,6 +34,13 @@ public class Member {
 	}
 	public void setMemberid(String memberid) {
 		this.memberid = memberid;
+	}
+	
+	public int getCompanyid() {
+		return companyid;
+	}
+	public void setCompanyid(int companyid) {
+		this.companyid = companyid;
 	}
 	
 	public int getGender() {
