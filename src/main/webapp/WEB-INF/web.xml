@@ -332,7 +332,8 @@
 	easily refer from these tool-specific files to the information in the standard 
 	deployment descriptor. Tools are not allowed to add the non-standard information 
 	into the standard deployment descriptor. -->
-<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<web-app xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 	<javaee:display-name>wechatptf</javaee:display-name>
 
 	<context-param>
@@ -342,46 +343,39 @@
 			WEB-INF/cxf-bean.xml
 		</param-value>
 	</context-param>
-<!-- 
-	<filter>
-		<filter-name>IpFilter</filter-name>
-		<filter-class>com.dt.opmqp.server.filter.IPFilter</filter-class>
-	</filter>
-	<filter>
-		<filter-name>TokenFilter</filter-name>
-		<filter-class>com.dt.opmqp.server.filter.TokenFilter</filter-class>
-	</filter>
-	<filter>
-		<filter-name>HibernateFilter</filter-name>
-		<filter-class>com.dt.opmqp.server.filter.HibernateFilter</filter-class>
-	</filter>
+	<!-- <filter> <filter-name>IpFilter</filter-name> <filter-class>com.dt.opmqp.server.filter.IPFilter</filter-class> 
+		</filter> <filter> <filter-name>TokenFilter</filter-name> <filter-class>com.dt.opmqp.server.filter.TokenFilter</filter-class> 
+		</filter> <filter> <filter-name>HibernateFilter</filter-name> <filter-class>com.dt.opmqp.server.filter.HibernateFilter</filter-class> 
+		</filter> <filter-mapping> <filter-name>IpFilter</filter-name> <url-pattern>/*</url-pattern> 
+		</filter-mapping> <filter-mapping> <filter-name>TokenFilter</filter-name> 
+		<url-pattern>/services/</url-pattern> </filter-mapping> <filter-mapping> 
+		<filter-name>HibernateFilter</filter-name> <url-pattern></url-pattern> </filter-mapping> -->
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
 
-	<filter-mapping>
-		<filter-name>IpFilter</filter-name>
-		<url-pattern>/*</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>TokenFilter</filter-name>
-		<url-pattern>/services/</url-pattern>
-	</filter-mapping>
-	<filter-mapping>
-		<filter-name>HibernateFilter</filter-name>
-		<url-pattern></url-pattern>
-	</filter-mapping>
--->
-
+	<servlet>
+		<servlet-name>spring</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>CXFServlet</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
 	<servlet>
 		<servlet-name>WechatIntfServlet</servlet-name>
 		<servlet-class>com.dt.wechatptf.wechatintf.WechatIntfServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>WapProducts</servlet-name>
+		<jsp-file>/wap/products.jsp</jsp-file>
+	</servlet>
 
+	<!-- default mapping -->
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.html</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>default</servlet-name>
-		<url-pattern>*.jsp</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>default</servlet-name>
@@ -403,8 +397,26 @@
 		<servlet-name>default</servlet-name>
 		<url-pattern>*.js</url-pattern>
 	</servlet-mapping>
-		<servlet-mapping>
+
+	<!-- jsp mapping -->
+	<servlet-mapping>
+		<servlet-name>WapProducts</servlet-name>
+		<url-pattern>/wap/products</url-pattern>
+	</servlet-mapping>
+
+	<!-- servlet mapping -->
+	<servlet-mapping>
 		<servlet-name>WechatIntfServlet</servlet-name>
 		<url-pattern>/wechatintf/*</url-pattern>
+	</servlet-mapping>
+	
+	<!-- framework mapping -->
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
 	</servlet-mapping>
 </web-app>

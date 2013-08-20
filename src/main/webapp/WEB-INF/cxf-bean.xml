@@ -8,10 +8,10 @@
     http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/jaxrs.xsd">
 
 	<import resource="classpath:META-INF/cxf/cxf.xml" />
-	<import resource="classpath:META-INF/cxf/cxf-extension-jaxrs-binding.xml" />
 	<import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
 	
-	<!-- <bean class="com.dt.opmqp.server.service.MessageServiceImpl" id="message"></bean> -->
+	<!-- 首先定义个一个bean，给出类路径，id必须是唯一的 -->
+	<bean class="com.dt.wechatptf.services.ExampleServiceImpl" id="example"></bean>
 
 	<jaxrs:server address="/" id="restservices">
 		<jaxrs:extensionMappings>
@@ -19,7 +19,8 @@
 			<entry key="json" value="application/json"></entry>
 		</jaxrs:extensionMappings>
 		<jaxrs:serviceBeans>
-			
+			<!-- 将上面定义的bean添加到这里 -->
+			<ref bean="example"/>
 		</jaxrs:serviceBeans>
 	</jaxrs:server>
 </beans>
