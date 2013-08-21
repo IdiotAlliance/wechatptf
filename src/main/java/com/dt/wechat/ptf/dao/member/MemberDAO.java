@@ -94,10 +94,15 @@ public class MemberDAO {
 		return message;
 	}
 	
+	/**
+	 * 更新会员信息
+	 * @param member
+	 * @return
+	 */
 	public ReturnMessage updateMember(Member member){
 		ReturnMessage message = new ReturnMessage();
 		try {
-			PreparedStatement ps=conn.prepareStatement("update member set name=?,gender=?,birthday=?,address=?,mail=?,weiid=?,phone=?,points=? where memberid=?");
+			PreparedStatement ps=conn.prepareStatement("update member set name=?,gender=?,birthday=?,address=?,mail=?,weiid=?,phone=? where memberid=?");
 			ps.setString(1, member.getName());
 			ps.setInt(2, member.getGender());
 			ps.setDate(3, member.getBirthday());
@@ -105,24 +110,66 @@ public class MemberDAO {
 			ps.setString(5, member.getMail());
 			ps.setString(6, member.getWeiid());
 			ps.setString(7, member.getPhone());
-			ps.setInt(8, member.getPoints());
 			ps.setString(9, member.getMemberid());
 			ps.executeUpdate();
 			message.setFail(0);
-			message.setMessage("修改会员信息成功！");
+			message.setMessage("更新会员信息成功！");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			message.setFail(1);
-			message.setMessage("修改会员信息失败，未知错误！");
+			message.setMessage("更新会员信息失败，未知错误！");
 		}
 		return message;
 	}
 	
+	/**
+	 * 更新会员积分
+	 * @param memberid
+	 * @param addPoints 增加或减少的积分值
+	 * @return
+	 */
+	public ReturnMessage updatePoints(String memberid, int addPoints){
+		ReturnMessage message = new ReturnMessage();
+		try {
+			PreparedStatement ps1=conn.prepareStatement("select points from member where memberid=?");
+			ps1.setString(1, memberid);
+			ResultSet rs=ps1.executeQuery();
+			int points = 0;
+			if (rs.next()){
+				points = rs.getInt(1);
+				points = points + addPoints;
+				
+				PreparedStatement ps2=conn.prepareStatement("update member set points=? where memberid=?");
+				ps2.setInt(1, points);
+				ps2.setString(2, memberid);
+				ps2.executeUpdate();
+				message.setFail(0);
+				message.setMessage("更新会员积分成功！");
+			}
+			
+			else{
+				message.setFail(1);
+				message.setMessage("更新会员积分失败，该会员不存在！");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			message.setFail(1);
+			message.setMessage("更新会员积分失败，未知错误！");
+		}
+		return message;
+	}
+	
+	/**
+	 * 查询会员信息
+	 * @param memberid
+	 * @return
+	 */
 	public Member queryMember(String memberid){
 		Member member = new Member();
 		try {
-			PreparedStatement ps=conn.prepareStatement("select * from member where memberid=");
+			PreparedStatement ps=conn.prepareStatement("select * from member where memberid=?");
 			ps.setString(1, memberid);
 			ResultSet rs=ps.executeQuery();
 			if (rs.next()){
