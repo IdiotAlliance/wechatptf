@@ -1,11 +1,10 @@
-package com.dt.wechatptf.dao.company;
+package com.dt.wechatptf.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.dt.wechatptf.dao.DBConnection;
 import com.dt.wechatptf.entity.Company;
 import com.dt.wechatptf.util.ReturnMessage;
 

@@ -1,4 +1,4 @@
-package com.dt.wechat.ptf.dao.member;
+package com.dt.wechatptf.dao;
 
 import java.io.Serializable;
 import java.sql.Connection;
@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Calendar;
 
-import com.dt.wechatptf.dao.DBConnection;
 import com.dt.wechatptf.entity.Member;
 import com.dt.wechatptf.util.ReturnMessage;
 
