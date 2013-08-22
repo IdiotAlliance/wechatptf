@@ -12,6 +12,20 @@ public class Company {
 	String phone;
 	String description;
 	
+	public Company(){}
+	
+	public Company(String account, String password, String name, String address, 
+			String weiid, String director, String phone, String description){
+		this.account = account;
+		this.password = password;
+		this.name = name;
+		this.address = address;
+		this.weiid = weiid;
+		this.director = director;
+		this.phone = phone;
+		this.description = description;
+	}
+	
 	public int getId() {
 		return id;
 	}

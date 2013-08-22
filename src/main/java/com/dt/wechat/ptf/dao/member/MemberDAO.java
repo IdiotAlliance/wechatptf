@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.Calendar;
 
 import com.dt.wechatptf.dao.DBConnection;
@@ -24,16 +25,16 @@ public class MemberDAO {
 	 * 添加会员
 	 * @param member
 	 */
-	public ReturnMessage addMember(Member member){
+	public ReturnMessage addMember(Member member, int companyid){
 		ReturnMessage message = new ReturnMessage();
 		try {
-			PreparedStatement ps1 = conn.prepareStatement("insert into member (name,gender,birthday,address,mail,weiid,phone,points) values(?,?,?,?,?,?,?,?)");
-			ps1.setString(1, member.getName());
-			ps1.setInt(2, member.getGender());
-			ps1.setDate(3, member.getBirthday());
-			ps1.setString(4, member.getAddress());
-			ps1.setString(5, member.getMail());
-			ps1.setString(6, member.getWeiid());
+			PreparedStatement ps1 = conn.prepareStatement("insert into member (weiid,name,gender,birthday,address,mail,phone,points) values(?,?,?,?,?,?,?,?)",Statement.RETURN_GENERATED_KEYS);
+			ps1.setString(1, member.getWeiid());
+			ps1.setString(2, member.getName());
+			ps1.setInt(3, member.getGender());
+			ps1.setDate(4, member.getBirthday());
+			ps1.setString(5, member.getAddress());
+			ps1.setString(6, member.getMail());
 			ps1.setString(7, member.getPhone());
 			ps1.setInt(8, member.getPoints());
 			ps1.executeUpdate();
@@ -43,19 +44,16 @@ public class MemberDAO {
 			if (rs.next()) {
                 ret = (Serializable) rs.getObject(1);
             }
-			int id = (Integer)ret;
-			String memberid = id+"";
-			System.out.println(memberid);
-			while(memberid.length() < 4){
-				memberid = "0" + memberid;
-			}
-			PreparedStatement ps2=conn.prepareStatement("update member set memberid=? where id=?");
-			ps2.setString(1, memberid);
-			ps2.setInt(2, id);
+			long id = (Long)ret;
+			
+			PreparedStatement ps2 = conn.prepareStatement("insert into member_company (memberid,weiid,companyid) values(?,?,?)");
+			ps2.setLong(1, id);
+			ps2.setString(2, member.getWeiid());
+			ps2.setInt(3, companyid);
 			ps2.executeUpdate();
 			
 			message.setFail(0);
-			message.setMessage("添加会员成功！会员号为" + memberid);
+			message.setMessage("添加会员成功！");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -71,15 +69,16 @@ public class MemberDAO {
 	 * @param companyid
 	 * @return
 	 */
-	public ReturnMessage deleteMember(String memberid){
+	public ReturnMessage deleteMember(String weiid, int companyid){
 		ReturnMessage message = new ReturnMessage();
-		try {
-			PreparedStatement ps1=conn.prepareStatement("delete from member where memberid=?");
-			ps1.setString(1,memberid);
+		int memberid = this.queryMemberid(weiid, companyid);
+		try {	
+			PreparedStatement ps1=conn.prepareStatement("delete from member where id=?");
+			ps1.setInt(1,memberid);
 			ps1.executeUpdate();
-			
+				
 			PreparedStatement ps2=conn.prepareStatement("delete from member_company where memberid=?");
-			ps2.setString(1,memberid);
+			ps2.setInt(1,memberid);
 			ps2.executeUpdate();
 			
 			message.setFail(0);
@@ -102,15 +101,14 @@ public class MemberDAO {
 	public ReturnMessage updateMember(Member member){
 		ReturnMessage message = new ReturnMessage();
 		try {
-			PreparedStatement ps=conn.prepareStatement("update member set name=?,gender=?,birthday=?,address=?,mail=?,weiid=?,phone=? where memberid=?");
+			PreparedStatement ps=conn.prepareStatement("update member set name=?,gender=?,birthday=?,address=?,mail=?,phone=? where id=?");
 			ps.setString(1, member.getName());
 			ps.setInt(2, member.getGender());
 			ps.setDate(3, member.getBirthday());
 			ps.setString(4, member.getAddress());
 			ps.setString(5, member.getMail());
-			ps.setString(6, member.getWeiid());
-			ps.setString(7, member.getPhone());
-			ps.setString(9, member.getMemberid());
+			ps.setString(6, member.getPhone());
+			ps.setInt(7, member.getId());
 			ps.executeUpdate();
 			message.setFail(0);
 			message.setMessage("更新会员信息成功！");
@@ -123,66 +121,67 @@ public class MemberDAO {
 		return message;
 	}
 	
-	/**
-	 * 更新会员积分
-	 * @param memberid
-	 * @param addPoints 增加或减少的积分值
-	 * @return
-	 */
-	public ReturnMessage updatePoints(String memberid, int addPoints){
-		ReturnMessage message = new ReturnMessage();
-		try {
-			PreparedStatement ps1=conn.prepareStatement("select points from member where memberid=?");
-			ps1.setString(1, memberid);
-			ResultSet rs=ps1.executeQuery();
-			int points = 0;
-			if (rs.next()){
-				points = rs.getInt(1);
-				points = points + addPoints;
-				
-				PreparedStatement ps2=conn.prepareStatement("update member set points=? where memberid=?");
-				ps2.setInt(1, points);
-				ps2.setString(2, memberid);
-				ps2.executeUpdate();
-				message.setFail(0);
-				message.setMessage("更新会员积分成功！");
-			}
-			
-			else{
-				message.setFail(1);
-				message.setMessage("更新会员积分失败，该会员不存在！");
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-			message.setFail(1);
-			message.setMessage("更新会员积分失败，未知错误！");
-		}
-		return message;
-	}
+//	/**
+//	 * 更新会员积分
+//	 * @param memberid
+//	 * @param addPoints 增加或减少的积分值
+//	 * @return
+//	 */
+//	public ReturnMessage updatePoints(String weiid, int companyid, int addPoints){
+//		ReturnMessage message = new ReturnMessage();
+//		int memberid = this.queryMemberid(weiid, companyid);
+//		try {
+//			PreparedStatement ps1=conn.prepareStatement("select points from member where id=?");
+//			ps1.setInt(1, memberid);
+//			ResultSet rs=ps1.executeQuery();
+//			int points = 0;
+//			if (rs.next()){
+//				points = rs.getInt(1);
+//				points = points + addPoints;
+//				
+//				PreparedStatement ps2=conn.prepareStatement("update member set points=? where id=?");
+//				ps2.setInt(1, points);
+//				ps2.setInt(2, memberid);
+//				ps2.executeUpdate();
+//				message.setFail(0);
+//				message.setMessage("更新会员积分成功！");
+//			}
+//			
+//			else{
+//				message.setFail(1);
+//				message.setMessage("更新会员积分失败，该会员不存在！");
+//			}
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//			message.setFail(1);
+//			message.setMessage("更新会员积分失败，未知错误！");
+//		}
+//		return message;
+//	}
 	
 	/**
 	 * 查询会员信息
 	 * @param memberid
 	 * @return
 	 */
-	public Member queryMember(String memberid){
+	public Member queryMember(String weiid, int companyid){
 		Member member = new Member();
+		int memberid = this.queryMemberid(weiid, companyid);
 		try {
-			PreparedStatement ps=conn.prepareStatement("select * from member where memberid=?");
-			ps.setString(1, memberid);
+			PreparedStatement ps=conn.prepareStatement("select * from member where id=?");
+			ps.setInt(1, memberid);
 			ResultSet rs=ps.executeQuery();
 			if (rs.next()){
 				member.setId(rs.getInt(1));
-				member.setMemberid(rs.getString(2));
+				member.setWeiid(rs.getString(2));
 				member.setName(rs.getString(3));
 				member.setGender(rs.getInt(4));
 				member.setBirthday(rs.getDate(5));
 				member.setAddress(rs.getString(6));
 				member.setMail(rs.getString(7));
-				member.setWeiid(rs.getString(8));
-				member.setPhone(rs.getString(9));
-				member.setPoints(rs.getInt(10));
+				member.setPhone(rs.getString(8));
+				member.setPoints(rs.getInt(9));
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -191,30 +190,50 @@ public class MemberDAO {
 		return member;
 	}
 	
+	public int queryMemberid(String weiid, int companyid){
+		int memberid = 0;
+		try {
+			PreparedStatement ps=conn.prepareStatement("select memberid from member_company where weiid=? and companyid=?");
+			ps.setString(1, weiid);
+			ps.setInt(2, companyid);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()){
+				memberid = rs.getInt(1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return memberid;
+	}
+	
 	public static void main(String[] args){
 		MemberDAO md = new MemberDAO();
 		
-		Member m = new Member();
-		m.setName("Cassie");
-		Calendar c = Calendar.getInstance();
-		c.set(Calendar.YEAR, 1991);
-		c.set(Calendar.MONTH, 2);	//month从0开始
-		c.set(Calendar.DAY_OF_MONTH, 9);
-		long birthday = c.getTimeInMillis();
-		m.setBirthday(new Date(birthday));
-		ReturnMessage rm = md.addMember(m);
-		System.out.println(rm.getMessage());
-		
-//		ReturnMessage rm = md.deleteMember("091250112", 1);
+//		Member m = new Member();
+//		m.setWeiid("mlr");
+//		m.setName("Cassie");
+//		Calendar c = Calendar.getInstance();
+//		c.set(Calendar.YEAR, 1991);
+//		c.set(Calendar.MONTH, 2);	//month从0开始
+//		c.set(Calendar.DAY_OF_MONTH, 9);
+//		long birthday = c.getTimeInMillis();
+//		m.setBirthday(new Date(birthday));
+//		ReturnMessage rm = md.addMember(m, 1);
 //		System.out.println(rm.getMessage());
 		
+		ReturnMessage rm = md.deleteMember("mlr", 1);
+		System.out.println(rm.getMessage());
+		
 //		Member m = new Member();
-//		m.setMemberid("091250112");
-//		m.setCompanyid(2);
+//		m.setId(5);
 //		m.setName("Cassie");
 //		m.setMail("909103970@qq.com");
 //		ReturnMessage rm = md.updateMember(m);
 //		System.out.println(rm.getMessage());
+		
+//		Member m = md.queryMember("mlr", 1);
+//		System.out.println(m.getName());
 	}
 
 }
