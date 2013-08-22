@@ -189,6 +189,12 @@ public class MemberDAO {
 		return member;
 	}
 	
+	/**
+	 * 查询id
+	 * @param weiid
+	 * @param companyid
+	 * @return
+	 */
 	public int queryMemberid(String weiid, int companyid){
 		int memberid = 0;
 		try {
@@ -209,20 +215,20 @@ public class MemberDAO {
 	public static void main(String[] args){
 		MemberDAO md = new MemberDAO();
 		
-//		Member m = new Member();
-//		m.setWeiid("mlr");
-//		m.setName("Cassie");
-//		Calendar c = Calendar.getInstance();
-//		c.set(Calendar.YEAR, 1991);
-//		c.set(Calendar.MONTH, 2);	//month从0开始
-//		c.set(Calendar.DAY_OF_MONTH, 9);
-//		long birthday = c.getTimeInMillis();
-//		m.setBirthday(new Date(birthday));
-//		ReturnMessage rm = md.addMember(m, 1);
-//		System.out.println(rm.getMessage());
-		
-		ReturnMessage rm = md.deleteMember("mlr", 1);
+		Member m = new Member();
+		m.setWeiid("mlr");
+		m.setName("Cassie");
+		Calendar c = Calendar.getInstance();
+		c.set(Calendar.YEAR, 1991);
+		c.set(Calendar.MONTH, 2);	//month从0开始
+		c.set(Calendar.DAY_OF_MONTH, 9);
+		long birthday = c.getTimeInMillis();
+		m.setBirthday(new Date(birthday));
+		ReturnMessage rm = md.addMember(m, 1);
 		System.out.println(rm.getMessage());
+		
+//		ReturnMessage rm = md.deleteMember("mlr", 1);
+//		System.out.println(rm.getMessage());
 		
 //		Member m = new Member();
 //		m.setId(5);
