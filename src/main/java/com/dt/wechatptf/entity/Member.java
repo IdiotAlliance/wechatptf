@@ -5,15 +5,30 @@ import java.sql.Date;
 public class Member {
 	
 	int id;
-	String memberid;//会员号
+	String weiid;	//微信号
 	String name;
 	int gender;		//性别，0男，1女，3未知	
 	Date birthday;
 	String address;
 	String mail;
-	String weiid;	//微信号
 	String phone;
 	int points;
+	
+	public Member(){
+		this.points = 0;
+	}
+	
+	public Member(String weiid, String name, int gender, Date birthday, String address, 
+			String mail, String phone, int points){
+		this.weiid = weiid;
+		this.name = name;
+		this.gender = gender;
+		this.birthday = birthday;
+		this.address = address;
+		this.mail = mail;
+		this.phone = phone;
+		this.points = points;
+	}
 
 	public int getId() {
 		return id;
@@ -22,18 +37,17 @@ public class Member {
 		this.id = id;
 	}
 	
+	public String getWeiid() {
+		return weiid;
+	}
+	public void setWeiid(String weiid) {
+		this.weiid = weiid;
+	}
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
-	}
-	
-	public String getMemberid() {
-		return memberid;
-	}
-	public void setMemberid(String memberid) {
-		this.memberid = memberid;
 	}
 	
 	public int getGender() {
@@ -62,13 +76,6 @@ public class Member {
 	}
 	public void setMail(String mail) {
 		this.mail = mail;
-	}
-	
-	public String getWeiid() {
-		return weiid;
-	}
-	public void setWeiid(String weiid) {
-		this.weiid = weiid;
 	}
 	
 	public String getPhone() {
