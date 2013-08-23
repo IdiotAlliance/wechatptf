@@ -97,8 +97,9 @@ public class MemberDAO {
 	 * @param member
 	 * @return
 	 */
-	public ReturnMessage updateMember(Member member){
+	public ReturnMessage updateMember(Member member, int companyid){
 		ReturnMessage message = new ReturnMessage();
+		int memberid = this.queryMemberid(member.getWeiid(), companyid);
 		try {
 			PreparedStatement ps=conn.prepareStatement("update member set name=?,gender=?,birthday=?,address=?,mail=?,phone=? where id=?");
 			ps.setString(1, member.getName());
@@ -107,7 +108,7 @@ public class MemberDAO {
 			ps.setString(4, member.getAddress());
 			ps.setString(5, member.getMail());
 			ps.setString(6, member.getPhone());
-			ps.setInt(7, member.getId());
+			ps.setInt(7, memberid);
 			ps.executeUpdate();
 			message.setFail(0);
 			message.setMessage("更新会员信息成功！");
