@@ -39,7 +39,7 @@ public class WechatXMLUtilTest {
 //	}
 //	
 	@Test
-	public void testParseXml(){
+	public void testParseXml1(){
 		
 		WechatMsg wm = WechatXMLUtil.parseMsg("<xml>" + 
  "<ToUserName><![CDATA[toUser]]></ToUserName>" +
@@ -53,6 +53,16 @@ public class WechatXMLUtilTest {
 		assertEquals(wm.getType(), WechatXMLUtil.MSG_TYPE_IMG);
 		assertEquals(wm.valueOf(WechatXMLUtil.KEY_FROM_USER_LOWER), "fromUser");
 		
+	}
+	
+	@Test
+	public void testParseXML2(){
+		WechatXMLUtil.parseMsg("<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006695</CreateTime><MsgType><![CDATA[location]]></MsgType><Location_X>32.178417</Location_X><Location_Y>120.049957</Location_Y><Scale>20</Scale><Label><![CDATA[]]></Label><MsgId>5914198721398046747</MsgId></xml>");
+	}
+	
+	@Test
+	public void testParseXML3(){
+		WechatXMLUtil.parseMsg("<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006772</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[unsubscribe]]></Event><EventKey><![CDATA[]]></EventKey></xml>");
 	}
 	
 	@Test

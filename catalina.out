@@ -1,0 +1,1648 @@
+Aug 20, 2013 5:32:12 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 5:32:13 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 5:32:13 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:32:13 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1957 ms
+Aug 20, 2013 5:32:13 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 5:32:13 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 5:32:13 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 5:32:15 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [300] milliseconds.
+Aug 20, 2013 5:32:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 5:32:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 5:32:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 5:32:15 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 5:32:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 5:32:15 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:32:15 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2332 ms
+Aug 20, 2013 5:56:56 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:56:56 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 5:56:56 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:57:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 5:57:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 5:57:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:57:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1612 ms
+Aug 20, 2013 5:57:04 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 5:57:04 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 5:57:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 5:57:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 5:57:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 5:57:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 5:57:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 5:57:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 5:57:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 5:57:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2183 ms
+Aug 20, 2013 6:01:52 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:01:52 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:01:52 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:01:59 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:02:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:02:00 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:02:00 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1573 ms
+Aug 20, 2013 6:02:00 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:02:00 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:02:00 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:02:26 PM org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [25,119] milliseconds.
+Aug 20, 2013 6:02:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:02:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:02:26 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:02:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:02:27 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:02:27 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:02:27 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 26994 ms
+Aug 20, 2013 6:03:19 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:03:19 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8999"]
+Aug 20, 2013 6:03:19 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:06:01 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:06:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:06:02 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:06:02 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1734 ms
+Aug 20, 2013 6:06:02 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:06:02 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:06:02 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:06:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 20, 2013 6:06:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 20, 2013 6:06:04 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@1d3ef34f')
+Aug 20, 2013 6:06:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:06:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:06:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:06:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:06:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:06:04 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-80]]
+Aug 20, 2013 6:06:04 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:06:05 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+Aug 20, 2013 6:06:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2567 ms
+Aug 20, 2013 6:06:56 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:06:56 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:06:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 20, 2013 6:06:56 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:06:56 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:07:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:07:03 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:07:04 PM org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["http-bio-80"]
+java.net.BindException: Permission denied <null>:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: Permission denied
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+
+Aug 20, 2013 6:07:04 PM org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Permission denied <null>:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Permission denied
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 17 more
+
+Aug 20, 2013 6:07:04 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:07:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2036 ms
+Aug 20, 2013 6:07:04 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:07:04 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:07:04 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:07:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 20, 2013 6:07:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 20, 2013 6:07:05 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: /home/lx/apache-tomcat-7.0.42/work/Catalina/210.209.70.43/examples is unusable.
+Aug 20, 2013 6:07:05 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@5b4946cd')
+Aug 20, 2013 6:07:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:07:05 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: /home/lx/apache-tomcat-7.0.42/work/Catalina/210.209.70.43/_ is unusable.
+Aug 20, 2013 6:07:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:07:05 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: /home/lx/apache-tomcat-7.0.42/work/Catalina/210.209.70.43/docs is unusable.
+Aug 20, 2013 6:07:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:07:06 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: /home/lx/apache-tomcat-7.0.42/work/Catalina/210.209.70.43/host-manager is unusable.
+Aug 20, 2013 6:07:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:07:06 PM org.apache.jasper.EmbeddedServletOptions <init>
+SEVERE: The scratchDir you specified: /home/lx/apache-tomcat-7.0.42/work/Catalina/210.209.70.43/manager is unusable.
+Aug 20, 2013 6:07:06 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:07:06 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+Aug 20, 2013 6:07:06 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2149 ms
+Aug 20, 2013 6:07:29 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:07:29 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:07:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 20, 2013 6:07:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-80"]
+Aug 20, 2013 6:07:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:09:44 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:09:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:09:45 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1969 ms
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [org.apache.catalina.valves.AccessLogValve[210.209.70.43:8080]] with name [org.apache.catalina.valves.AccessLogValve[210.209.70.43:8080]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.valves.ValveBase.initInternal(ValveBase.java:230)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:185)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1137)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [org.apache.catalina.valves.ErrorReportValve[210.209.70.43:8080]] with name [org.apache.catalina.valves.ErrorReportValve[210.209.70.43:8080]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.valves.ValveBase.initInternal(ValveBase.java:230)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:185)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1137)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [org.apache.catalina.core.StandardHostValve[210.209.70.43:8080]] with name [org.apache.catalina.core.StandardHostValve[210.209.70.43:8080]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.valves.ValveBase.initInternal(ValveBase.java:230)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:185)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1137)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig start
+SEVERE: Register context [null] failed
+java.lang.NullPointerException
+	at org.apache.catalina.startup.HostConfig.start(HostConfig.java:1376)
+	at org.apache.catalina.startup.HostConfig.lifecycleEvent(HostConfig.java:317)
+	at org.apache.catalina.util.LifecycleSupport.fireLifecycleEvent(LifecycleSupport.java:119)
+	at org.apache.catalina.util.LifecycleBase.fireLifecycleEvent(LifecycleBase.java:90)
+	at org.apache.catalina.util.LifecycleBase.setStateInternal(LifecycleBase.java:402)
+	at org.apache.catalina.util.LifecycleBase.setState(LifecycleBase.java:347)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:1140)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:800)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/examples]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/examples]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6448)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5085)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/examples] startup failed due to previous errors
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6448)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5085)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [] startup failed due to previous errors
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/docs]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/docs]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6448)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5085)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/docs] startup failed due to previous errors
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/host-manager]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/host-manager]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6448)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5085)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/host-manager] startup failed due to previous errors
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:09:45 PM org.apache.catalina.util.LifecycleMBeanBase register
+WARNING: Failed to register object [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/manager]] with name [StandardEngine[Catalina].StandardHost[210.209.70.43:8080].StandardContext[/manager]] during component initialisation
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.util.LifecycleMBeanBase.register(LifecycleMBeanBase.java:156)
+	at org.apache.catalina.util.LifecycleMBeanBase.initInternal(LifecycleMBeanBase.java:61)
+	at org.apache.catalina.core.ContainerBase.initInternal(ContainerBase.java:1084)
+	at org.apache.catalina.core.StandardContext.initInternal(StandardContext.java:6448)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:139)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext resourcesStart
+SEVERE: Error starting static Resources
+javax.management.MalformedObjectNameException: Invalid character ':' in value part of property
+	at javax.management.ObjectName.construct(ObjectName.java:618)
+	at javax.management.ObjectName.<init>(ObjectName.java:1382)
+	at org.apache.catalina.core.StandardContext.resourcesStart(StandardContext.java:5085)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5235)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:901)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:877)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:633)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1113)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1671)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error in resourceStart()
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Error getConfigured
+Aug 20, 2013 6:09:45 PM org.apache.catalina.core.StandardContext startInternal
+SEVERE: Context [/manager] startup failed due to previous errors
+Aug 20, 2013 6:09:45 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:09:45 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-8080]]
+Aug 20, 2013 6:09:45 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:09:45 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+Aug 20, 2013 6:09:45 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 531 ms
+Aug 20, 2013 6:11:29 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:11:29 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:11:29 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:11:33 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:11:34 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:11:34 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:11:34 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1610 ms
+Aug 20, 2013 6:11:34 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:11:34 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:11:34 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:11:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 20, 2013 6:11:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 20, 2013 6:11:36 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@52a0b1e1')
+Aug 20, 2013 6:11:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:11:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:11:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:11:36 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:11:36 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:11:36 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-8080]]
+Aug 20, 2013 6:11:36 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:11:36 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+Aug 20, 2013 6:11:36 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2322 ms
+Aug 20, 2013 6:14:22 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:14:22 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 6:14:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 20, 2013 6:14:22 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:14:22 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:14:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+Aug 20, 2013 6:14:27 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:14:27 PM org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:14:27 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1574 ms
+Aug 20, 2013 6:14:27 PM org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+Aug 20, 2013 6:14:27 PM org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+Aug 20, 2013 6:14:27 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+Aug 20, 2013 6:14:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+Aug 20, 2013 6:14:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+Aug 20, 2013 6:14:29 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@2345c47f')
+Aug 20, 2013 6:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+Aug 20, 2013 6:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+Aug 20, 2013 6:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+Aug 20, 2013 6:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+Aug 20, 2013 6:14:29 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 6:14:29 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-8080]]
+Aug 20, 2013 6:14:29 PM org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 6:14:29 PM org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+Aug 20, 2013 6:14:29 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2417 ms
+八月 20, 2013 7:33:00 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+八月 20, 2013 7:33:01 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:33:01 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:33:01 下午 org.apache.coyote.AbstractProtocol init
+SEVERE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: 地址已在使用 <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: 地址已在使用
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+
+八月 20, 2013 7:33:01 下午 org.apache.catalina.core.StandardService initInternal
+SEVERE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: 地址已在使用 <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:406)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:610)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:429)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: 地址已在使用
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:393)
+	... 16 more
+
+八月 20, 2013 7:33:01 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1718 ms
+八月 20, 2013 7:33:02 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+八月 20, 2013 7:33:02 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+八月 20, 2013 7:33:02 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+八月 20, 2013 7:33:03 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+八月 20, 2013 7:33:03 下午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+八月 20, 2013 7:33:03 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@327f54e7')
+八月 20, 2013 7:33:03 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+八月 20, 2013 7:33:03 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+八月 20, 2013 7:33:04 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+八月 20, 2013 7:33:04 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:33:04 下午 org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-80]]
+八月 20, 2013 7:33:04 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2651 ms
+八月 20, 2013 7:33:04 下午 org.apache.catalina.core.StandardServer await
+SEVERE: StandardServer.await: create[localhost:8005]: 
+java.net.BindException: 地址已在使用
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at org.apache.catalina.core.StandardServer.await(StandardServer.java:427)
+	at org.apache.catalina.startup.Catalina.await(Catalina.java:779)
+	at org.apache.catalina.startup.Catalina.start(Catalina.java:725)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.start(Bootstrap.java:322)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:456)
+
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:33:04 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+八月 20, 2013 7:33:04 下午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+八月 20, 2013 7:33:04 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:33:04 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 7:33:58 PM org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 7:33:58 PM org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+Aug 20, 2013 7:33:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+Aug 20, 2013 7:33:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-8080"]
+Aug 20, 2013 7:33:58 PM org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:36:47 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+八月 20, 2013 7:36:48 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:36:48 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:36:48 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 1666 ms
+八月 20, 2013 7:36:48 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+八月 20, 2013 7:36:48 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+八月 20, 2013 7:36:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+八月 20, 2013 7:36:49 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+八月 20, 2013 7:36:49 下午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+八月 20, 2013 7:36:50 下午 org.apache.catalina.util.SessionIdGenerator createSecureRandom
+INFO: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [245] milliseconds.
+八月 20, 2013 7:36:50 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@6178808c')
+八月 20, 2013 7:36:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+八月 20, 2013 7:36:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+八月 20, 2013 7:36:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+八月 20, 2013 7:36:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+八月 20, 2013 7:36:50 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:36:50 下午 org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-80]]
+八月 20, 2013 7:36:50 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:36:50 下午 org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+八月 20, 2013 7:36:50 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2014 ms
+八月 20, 2013 7:37:41 下午 org.apache.catalina.core.StandardServer await
+INFO: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol pause
+INFO: Pausing ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:37:41 下午 org.apache.catalina.core.StandardService stopInternal
+INFO: Stopping service Catalina
+八月 20, 2013 7:37:41 下午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextDestroyed()
+八月 20, 2013 7:37:41 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextDestroyed()
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol stop
+INFO: Stopping ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:37:41 下午 org.apache.coyote.AbstractProtocol destroy
+INFO: Destroying ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:37:46 下午 org.apache.catalina.core.AprLifecycleListener init
+INFO: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+八月 20, 2013 7:37:47 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:37:47 下午 org.apache.coyote.AbstractProtocol init
+INFO: Initializing ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:37:47 下午 org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 2061 ms
+八月 20, 2013 7:37:47 下午 org.apache.catalina.core.StandardService startInternal
+INFO: Starting service Catalina
+八月 20, 2013 7:37:47 下午 org.apache.catalina.core.StandardEngine startInternal
+INFO: Starting Servlet Engine: Apache Tomcat/7.0.42
+八月 20, 2013 7:37:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/examples
+八月 20, 2013 7:37:49 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: contextInitialized()
+八月 20, 2013 7:37:49 下午 org.apache.catalina.core.ApplicationContext log
+INFO: SessionListener: contextInitialized()
+八月 20, 2013 7:37:49 下午 org.apache.catalina.core.ApplicationContext log
+INFO: ContextListener: attributeAdded('org.apache.jasper.compiler.TldLocationsCache', 'org.apache.jasper.compiler.TldLocationsCache@f49bbdf')
+八月 20, 2013 7:37:49 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/ROOT
+八月 20, 2013 7:37:49 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/docs
+八月 20, 2013 7:37:49 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/host-manager
+八月 20, 2013 7:37:49 下午 org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory /home/lx/apache-tomcat-7.0.42/webapps/manager
+八月 20, 2013 7:37:49 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["http-bio-80"]
+八月 20, 2013 7:37:49 下午 org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[HTTP/1.1-80]]
+八月 20, 2013 7:37:49 下午 org.apache.coyote.AbstractProtocol start
+INFO: Starting ProtocolHandler ["ajp-bio-8009"]
+八月 20, 2013 7:37:49 下午 org.apache.catalina.connector.MapperListener findDefaultHost
+WARNING: Unknown default host [localhost] for connector [Connector[AJP/1.3-8009]]
+八月 20, 2013 7:37:49 下午 org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2169 ms
+八月 20, 2013 7:48:19 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/lx/apache-tomcat-7.0.42/webapps/wechatptf.war
+八月 20, 2013 7:48:24 下午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+八月 20, 2013 7:48:24 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+八月 20, 2013 7:48:24 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+八月 20, 2013 7:48:24 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Tue Aug 20 19:48:24 CST 2013]; root of context hierarchy
+八月 20, 2013 7:48:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+八月 20, 2013 7:48:24 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/cxf-bean.xml]
+八月 20, 2013 7:48:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+八月 20, 2013 7:48:25 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+八月 20, 2013 7:48:25 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7b4dd8d9: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 7:48:27 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+八月 20, 2013 7:48:27 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 3169 ms
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:5e3851bbee999f293f08c51293fe9c1cf0a38546
+timestamp:1376999419
+nonce:1377679342
+echostr:5917087702461929467
+八月 20, 2013 8:06:29 下午 org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/wechatptf]
+八月 20, 2013 8:06:29 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+八月 20, 2013 8:06:29 下午 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Tue Aug 20 19:48:24 CST 2013]; root of context hierarchy
+八月 20, 2013 8:06:29 下午 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7b4dd8d9: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 8:06:30 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/lx/apache-tomcat-7.0.42/webapps/wechatptf.war
+八月 20, 2013 8:06:34 下午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+八月 20, 2013 8:06:34 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+八月 20, 2013 8:06:34 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+八月 20, 2013 8:06:34 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Tue Aug 20 20:06:34 CST 2013]; root of context hierarchy
+八月 20, 2013 8:06:34 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+八月 20, 2013 8:06:34 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/cxf-bean.xml]
+八月 20, 2013 8:06:35 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+八月 20, 2013 8:06:35 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+八月 20, 2013 8:06:35 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1abc78a1: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 8:06:36 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+八月 20, 2013 8:06:36 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 2049 ms
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+八月 20, 2013 8:53:07 下午 org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/wechatptf]
+八月 20, 2013 8:53:07 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+八月 20, 2013 8:53:07 下午 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Tue Aug 20 20:06:34 CST 2013]; root of context hierarchy
+八月 20, 2013 8:53:07 下午 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1abc78a1: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 8:53:07 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/lx/apache-tomcat-7.0.42/webapps/wechatptf.war
+八月 20, 2013 8:53:09 下午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+八月 20, 2013 8:53:10 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+八月 20, 2013 8:53:10 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+八月 20, 2013 8:53:10 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Tue Aug 20 20:53:10 CST 2013]; root of context hierarchy
+八月 20, 2013 8:53:10 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+八月 20, 2013 8:53:10 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/cxf-bean.xml]
+八月 20, 2013 8:53:10 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+八月 20, 2013 8:53:10 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+八月 20, 2013 8:53:10 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64786571: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 8:53:11 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+八月 20, 2013 8:53:11 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 1443 ms
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:7973dfe1926caddc558584ed5fd5577ac364e089
+timestamp:1377003550
+nonce:1377088267
+echostr:5914549084732221471
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377003642</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914185608862892045</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377003642
+msgtype:text
+content:你好
+msgid:5914185608862892045
+八月 20, 2013 8:59:12 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.NumberFormatException: For input string: "CreateTime"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$MessageHandler.<init>(WechatMessageHandler.java:33)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$TextMessageHandler.<init>(WechatMessageHandler.java:43)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler.handleMsg(WechatMessageHandler.java:11)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377003655</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914185664697466894</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377003655
+msgtype:text
+content:你好
+msgid:5914185664697466894
+八月 20, 2013 8:59:24 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.NumberFormatException: For input string: "CreateTime"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$MessageHandler.<init>(WechatMessageHandler.java:33)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$TextMessageHandler.<init>(WechatMessageHandler.java:43)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler.handleMsg(WechatMessageHandler.java:11)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377003663</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914185699057205263</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377003663
+msgtype:text
+content:你好
+msgid:5914185699057205263
+八月 20, 2013 8:59:33 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.NumberFormatException: For input string: "CreateTime"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$MessageHandler.<init>(WechatMessageHandler.java:33)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$TextMessageHandler.<init>(WechatMessageHandler.java:43)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler.handleMsg(WechatMessageHandler.java:11)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377003679</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914185767776682000</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377003679
+msgtype:text
+content:你好
+msgid:5914185767776682000
+八月 20, 2013 8:59:48 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.NumberFormatException: For input string: "CreateTime"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Long.parseLong(Long.java:441)
+	at java.lang.Long.parseLong(Long.java:483)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$MessageHandler.<init>(WechatMessageHandler.java:33)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler$TextMessageHandler.<init>(WechatMessageHandler.java:43)
+	at com.dt.wechatptf.wechatintf.WechatMessageHandler.handleMsg(WechatMessageHandler.java:11)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+八月 20, 2013 9:31:02 下午 org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/wechatptf]
+八月 20, 2013 9:31:02 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+八月 20, 2013 9:31:02 下午 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Tue Aug 20 20:53:10 CST 2013]; root of context hierarchy
+八月 20, 2013 9:31:02 下午 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64786571: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 9:31:02 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/lx/apache-tomcat-7.0.42/webapps/wechatptf.war
+八月 20, 2013 9:31:04 下午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+八月 20, 2013 9:31:04 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+八月 20, 2013 9:31:04 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+八月 20, 2013 9:31:04 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Tue Aug 20 21:31:04 CST 2013]; root of context hierarchy
+八月 20, 2013 9:31:05 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+八月 20, 2013 9:31:05 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/cxf-bean.xml]
+八月 20, 2013 9:31:05 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+八月 20, 2013 9:31:05 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+八月 20, 2013 9:31:05 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@359e7771: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 9:31:06 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+八月 20, 2013 9:31:06 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 1362 ms
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377005632</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914194155847811089</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377005632
+msgtype:text
+content:你好
+msgid:5914194155847811089
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377005641</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914194194502516755</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377005641
+msgtype:text
+content:你好
+msgid:5914194194502516755
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377005677</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914194349121339413</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377005677
+msgtype:text
+content:你好
+msgid:5914194349121339413
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377005677</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914194349121339414</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377005677
+msgtype:text
+content:你好
+msgid:5914194349121339414
+八月 20, 2013 9:47:06 下午 org.apache.catalina.startup.HostConfig deleteRedeployResources
+INFO: Undeploying context [/wechatptf]
+八月 20, 2013 9:47:06 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Closing Spring root WebApplicationContext
+八月 20, 2013 9:47:06 下午 org.springframework.context.support.AbstractApplicationContext doClose
+INFO: Closing Root WebApplicationContext: startup date [Tue Aug 20 21:31:04 CST 2013]; root of context hierarchy
+八月 20, 2013 9:47:06 下午 org.springframework.beans.factory.support.DefaultSingletonBeanRegistry destroySingletons
+INFO: Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@359e7771: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 9:47:07 下午 org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive /home/lx/apache-tomcat-7.0.42/webapps/wechatptf.war
+八月 20, 2013 9:47:08 下午 org.apache.catalina.core.ApplicationContext log
+INFO: No Spring WebApplicationInitializer types detected on classpath
+八月 20, 2013 9:47:09 下午 org.apache.catalina.core.ApplicationContext log
+INFO: Initializing Spring root WebApplicationContext
+八月 20, 2013 9:47:09 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization started
+八月 20, 2013 9:47:09 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+INFO: Refreshing Root WebApplicationContext: startup date [Tue Aug 20 21:47:09 CST 2013]; root of context hierarchy
+八月 20, 2013 9:47:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+八月 20, 2013 9:47:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from ServletContext resource [/WEB-INF/cxf-bean.xml]
+八月 20, 2013 9:47:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf.xml]
+八月 20, 2013 9:47:09 下午 org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+INFO: Loading XML bean definitions from class path resource [META-INF/cxf/cxf-servlet.xml]
+八月 20, 2013 9:47:09 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+INFO: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@17f8ec8d: defining beans [cxf,org.apache.cxf.bus.spring.BusWiringBeanFactoryPostProcessor,org.apache.cxf.bus.spring.Jsr250BeanPostProcessor,org.apache.cxf.bus.spring.BusExtensionPostProcessor,example,restservices]; root of factory hierarchy
+八月 20, 2013 9:47:10 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+INFO: Setting the server's publish address to be /
+八月 20, 2013 9:47:10 下午 org.springframework.web.context.ContextLoader initWebApplicationContext
+INFO: Root WebApplicationContext: initialization completed in 1389 ms
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+/wechatptf
+signature:null
+timestamp:null
+nonce:null
+echostr:null
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006611</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914198360620793881</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006611
+msgtype:text
+content:你好
+msgid:5914198360620793881
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006695</CreateTime><MsgType><![CDATA[location]]></MsgType><Location_X>32.178417</Location_X><Location_Y>120.049957</Location_Y><Scale>20</Scale><Label><![CDATA[]]></Label><MsgId>5914198721398046747</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006695
+msgtype:location
+location_x:32.178417
+location_y:120.049957
+scale:20
+八月 20, 2013 9:50:05 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:604)
+	at java.util.ArrayList.get(ArrayList.java:382)
+	at org.jsoup.nodes.Node.childNode(Node.java:204)
+	at com.dt.wechatptf.util.WechatXMLUtil.parseMsg(WechatXMLUtil.java:119)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006723</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914198841657131036</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006723
+msgtype:text
+content:你好
+msgid:5914198841657131036
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006740</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[为什么]]></Content><MsgId>5914198914671575070</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006740
+msgtype:text
+content:为什么
+msgid:5914198914671575070
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006772</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[unsubscribe]]></Event><EventKey><![CDATA[]]></EventKey></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006772
+msgtype:event
+event:unsubscribe
+八月 20, 2013 9:51:21 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:604)
+	at java.util.ArrayList.get(ArrayList.java:382)
+	at org.jsoup.nodes.Node.childNode(Node.java:204)
+	at com.dt.wechatptf.util.WechatXMLUtil.parseMsg(WechatXMLUtil.java:119)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006807</CreateTime><MsgType><![CDATA[event]]></MsgType><Event><![CDATA[subscribe]]></Event><EventKey><![CDATA[]]></EventKey></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006807
+msgtype:event
+event:subscribe
+八月 20, 2013 9:51:56 下午 org.apache.catalina.core.StandardWrapperValve invoke
+SEVERE: Servlet.service() for servlet [WechatIntfServlet] in context with path [/wechatptf] threw exception
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:604)
+	at java.util.ArrayList.get(ArrayList.java:382)
+	at org.jsoup.nodes.Node.childNode(Node.java:204)
+	at com.dt.wechatptf.util.WechatXMLUtil.parseMsg(WechatXMLUtil.java:119)
+	at com.dt.wechatptf.wechatintf.WechatIntfServlet.doPost(WechatIntfServlet.java:93)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:647)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:728)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:305)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:210)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:222)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:123)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:171)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:99)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:953)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:118)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:408)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1023)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:589)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:310)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+
+received post request
+<xml><ToUserName><![CDATA[gh_2f57adf933f5]]></ToUserName><FromUserName><![CDATA[oz7OTjuZ_z6iwu03GOetYvpIMVpA]]></FromUserName><CreateTime>1377006853</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[你好]]></Content><MsgId>5914199400002879520</MsgId></xml>
+tousername:gh_2f57adf933f5
+fromusername:oz7OTjuZ_z6iwu03GOetYvpIMVpA
+createtime:1377006853
+msgtype:text
+content:你好
+msgid:5914199400002879520

@@ -116,7 +116,9 @@ public class WechatXMLUtil {
 		Document doc = Jsoup.parse(xmlMsg);
 		for(Element elem: doc.body().children().first().children()){
 			String nodeName = elem.nodeName().trim();
-			String value    = elem.childNode(0).toString().trim();
+			String value    = null;
+			if(elem.childNodes().size() > 0)
+				value    = elem.childNode(0).toString().trim();
 			System.out.println(nodeName + ":" + value);
 			if(nodeName == null)
 				throw new NullPointerException("node name is null!");
