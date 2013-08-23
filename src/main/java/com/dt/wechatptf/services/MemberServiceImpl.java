@@ -1,6 +1,9 @@
 package com.dt.wechatptf.services;
 
+import java.sql.Date;
+
 import javax.ws.rs.DELETE;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -10,34 +13,40 @@ import com.dt.wechatptf.dao.MemberDAO;
 import com.dt.wechatptf.entity.Member;
 import com.dt.wechatptf.util.ReturnMessage;
 
-@Path("company")
+@Path("company/{companyid}")
 public class MemberServiceImpl implements MemberService {
 	
 	MemberDAO md = new MemberDAO();
 
 	@POST
-	@Path("/{companyid}/addMember")
-	public ReturnMessage addMember(Member member, @PathParam("companyid") int companyid) {
-		// TODO Auto-generated method stub
+	@Path("/addMember/{weiid}")
+	public ReturnMessage addMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
+			@FormParam("gender") int gender, @FormParam("birthday") Date birthday, 
+			@FormParam("address") String address, @FormParam("mail") String mail, 
+			@FormParam("phone") String phone, @PathParam("companyid") int companyid) {
+		Member member = new Member(weiid, name, gender, birthday, address, mail, phone, 0);
 		return md.addMember(member, companyid);
 	}
 
 	@DELETE
-	@Path("/{companyid}/deleteMember/{weiid}")
+	@Path("/deleteMember/{weiid}")
 	public ReturnMessage deleteMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
 		// TODO Auto-generated method stub
 		return md.deleteMember(weiid, companyid);
 	}
 
 	@POST
-	@Path("/{companyid}/updateMember")
-	public ReturnMessage updateMember(Member member, @PathParam("companyid") int companyid) {
-		// TODO Auto-generated method stub
+	@Path("/updateMember/{weiid}")
+	public ReturnMessage updateMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
+			@FormParam("gender") int gender, @FormParam("birthday") Date birthday, 
+			@FormParam("address") String address, @FormParam("mail") String mail, 
+			@FormParam("phone") String phone, @PathParam("companyid") int companyid) {
+		Member member = new Member(weiid, name, gender, birthday, address, mail, phone, 0);
 		return md.updateMember(member, companyid);
 	}
 
 	@GET
-	@Path("/{companyid}/queryMember/{weiid}")
+	@Path("/queryMember/{weiid}")
 	public Member queryMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
 		// TODO Auto-generated method stub
 		return md.queryMember(weiid, companyid);
