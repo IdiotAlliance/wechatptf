@@ -1,6 +1,8 @@
 package com.dt.wechatptf.services;
 
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
@@ -21,6 +23,18 @@ public class ExampleServiceImpl implements ExampleService{
 	) {
 		// TODO Auto-generated method stub
 		return "Hello " + name;
+	}
+
+	/***
+	 * 如果post请求是通过表格提交的key-value的形式，可以直接使用annotation来标记和获取参数。
+	 */
+	@POST
+	@Path("/register")
+	public String post(@FormParam("username") String username, 
+					   @FormParam("password") String password) {
+		
+		return "your username is :" + username +"\n" +
+			   "your password is :" + password;
 	}
 
 }

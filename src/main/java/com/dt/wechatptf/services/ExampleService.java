@@ -13,4 +13,6 @@ public interface ExampleService {
 	 * @return
 	 */
 	public String hello(String name);
+	
+	public String post(String username, String password);
 }
