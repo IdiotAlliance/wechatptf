@@ -14,7 +14,7 @@ import javax.ws.rs.PathParam;
  *
  */
 @Path("example") // 服务的url前缀
-public class ExampleServiceImpl implements ExampleService{
+public class ExampleServiceImpl extends BaseService implements ExampleService {
 
 	@GET
 	@Path("/hello/{name}") // 先对于前缀的路径，大括号中是url参数
