@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.dt.wechatptf.entity.Member;
+import com.dt.wechatptf.util.ReturnMessage;
 
 public class MemberCompanyDAO {
 	
@@ -16,6 +17,11 @@ public class MemberCompanyDAO {
 		conn = DBConnection.getDBConnection();
 	}
 	
+	/**
+	 * 查询某个商家的所有会员信息
+	 * @param companyid
+	 * @return
+	 */
 	public ArrayList<Member> queryMembers(int companyid){
 		ArrayList<Member> members = new ArrayList<Member>();
 		try {
@@ -48,13 +54,84 @@ public class MemberCompanyDAO {
 		return members;
 	}
 	
+	/**
+	 * 查询某个商家的某个会员的积分
+	 * @param weiid
+	 * @param companyid
+	 * @return
+	 */
+	public int queryPoints(String weiid, int companyid){
+		int points = 0;
+		try {
+			PreparedStatement ps=conn.prepareStatement("select points from member_company where weiid=? and companyid=?");
+			ps.setString(1, weiid);
+			ps.setInt(2, companyid);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()){
+				points = rs.getInt(1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return points;
+	}
+	
+	/**
+	 * 更新某个会员在某个商家的积分
+	 * @param weiid
+	 * @param companyid
+	 * @param addPoints
+	 * @return
+	 */
+	public ReturnMessage updatePoints(String weiid, int companyid, int addPoints){
+		ReturnMessage message = new ReturnMessage();
+		try {
+			PreparedStatement ps1=conn.prepareStatement("select points from member_company where weiid=? and companyid=?");
+			ps1.setString(1, weiid);
+			ps1.setInt(2, companyid);
+			ResultSet rs=ps1.executeQuery();
+			int points = 0;
+			if (rs.next()){
+				points = rs.getInt(1);
+				points = points + addPoints;
+				
+				PreparedStatement ps2=conn.prepareStatement("update member_company set points=? where weiid=? and companyid=?");
+				ps2.setInt(1, points);
+				ps2.setString(2, weiid);
+				ps2.setInt(3, companyid);
+				ps2.executeUpdate();
+				message.setFail(0);
+				message.setMessage("更新会员积分成功！该会员目前积分为"+points);
+			}
+			
+			else{
+				message.setFail(1);
+				message.setMessage("更新会员积分失败，该会员不存在！");
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			message.setFail(1);
+			message.setMessage("更新会员积分失败，未知错误！");
+		}
+		return message;
+	}
+	
 	public static void main(String[] args){
 		MemberCompanyDAO mcd = new MemberCompanyDAO();
-		ArrayList<Member> ms = mcd.queryMembers(1);
-		for(int i=0; i<ms.size(); i++){
-			System.out.println(ms.get(i).getId());
-			System.out.println(ms.get(i).getName());
-		}
+		
+//		ArrayList<Member> ms = mcd.queryMembers(1);
+//		for(int i=0; i<ms.size(); i++){
+//			System.out.println(ms.get(i).getId());
+//			System.out.println(ms.get(i).getName());
+//		}
+		
+//		int points = mcd.queryPoints("mlr", 1);
+//		System.out.println(points);
+		
+//		ReturnMessage rm = mcd.updatePoints("mlr", 1, 30);
+//		System.out.println(rm.getMessage());
 	}
 
 }

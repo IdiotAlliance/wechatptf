@@ -147,8 +147,8 @@ public class CompanyDAO {
 	public static void main(String[] args){
 		CompanyDAO cd = new CompanyDAO();
 		Company c1 = new Company("google","123","google","USA","google","CEO","123456","google company");
-//		ReturnMessage rm = cd.addCompany(c1);
-//		System.out.println(rm.getMessage());
+		ReturnMessage rm = cd.addCompany(c1);
+		System.out.println(rm.getMessage());
 		
 //		Company c2 = c1;
 //		c2.setPhone("654321");
@@ -160,7 +160,7 @@ public class CompanyDAO {
 //			System.out.println(c.getDescription());
 //		}
 		
-		ReturnMessage rm = cd.deleteCompany("google");
-		System.out.println(rm.getMessage());
+//		ReturnMessage rm = cd.deleteCompany("google");
+//		System.out.println(rm.getMessage());
 	}
 }
