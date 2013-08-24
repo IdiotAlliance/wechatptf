@@ -12,6 +12,8 @@
 	
 	<!-- 首先定义个一个bean，给出类路径，id必须是唯一的 -->
 	<bean class="com.dt.wechatptf.services.ExampleServiceImpl" id="example"></bean>
+	<bean class="com.dt.wechatptf.services.MemberServiceImpl" id="member"></bean>
+	<bean class="com.dt.wechatptf.services.CompanyServiceImpl" id="company"></bean>
 
 	<jaxrs:server address="/" id="restservices">
 		<jaxrs:extensionMappings>
@@ -21,6 +23,8 @@
 		<jaxrs:serviceBeans>
 			<!-- 将上面定义的bean添加到这里 -->
 			<ref bean="example"/>
+			<ref bean="member"/>
+			<ref bean="company"/>
 		</jaxrs:serviceBeans>
 	</jaxrs:server>
 </beans>
