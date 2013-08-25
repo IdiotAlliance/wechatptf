@@ -13,7 +13,7 @@ public class CompanyDAO {
 	Connection conn;
 	
 	public CompanyDAO(){
-		conn = DBConnection.getDBConnection();
+		conn = DBConnection.getChatDBConnection();
 	}
 	
 	/**
