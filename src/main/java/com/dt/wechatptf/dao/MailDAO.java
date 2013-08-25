@@ -97,22 +97,35 @@ public class MailDAO {
 	 * @param mail
 	 * @return
 	 */
-	public ReturnMessage addUser(String account, String password, String mail){
+	public ReturnMessage addUser(String account){
 		ReturnMessage message = new ReturnMessage();
+		String password = null;
+		String mail = null;
 		try {
-			PreparedStatement ps = conn.prepareStatement("insert into user (account,password,mail) values(?,?,?)");
-			ps.setString(1, account);
-			ps.setString(2, password);
-			ps.setString(3, mail);
-			ps.executeUpdate();
-			
-			message.setFail(0);
-			message.setMessage("添加已验证用户成功！");
+			PreparedStatement ps1=conn.prepareStatement("select password,mail from usertemp where account=?");
+			ps1.setString(1, account);
+			ResultSet rs1=ps1.executeQuery();
+			if (rs1.next()){
+				password = rs1.getString(1);
+				mail = rs1.getString(2);
+				
+				PreparedStatement ps = conn.prepareStatement("insert into user (account,password,mail) values(?,?,?)");
+				ps.setString(1, account);
+				ps.setString(2, password);
+				ps.setString(3, mail);
+				ps.executeUpdate();
+				
+				message.setFail(0);
+				message.setMessage("添加已验证用户成功！");
+			}
+			else{
+				message.setFail(1);
+				message.setMessage("添加已验证用户失败，未查询到此未验证用户！");
+			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
 			message.setFail(1);
 			message.setMessage("添加已验证用户失败，未知错误！");
+			e.printStackTrace();
 		}
 		return message;
 	}
@@ -122,11 +135,11 @@ public class MailDAO {
 	 * @param accout
 	 * @return
 	 */
-	public ReturnMessage deleteUserTemp(String accout){
+	public ReturnMessage deleteUserTemp(String account){
 		ReturnMessage message = new ReturnMessage();
 		try {	
 			PreparedStatement ps=conn.prepareStatement("delete from usertemp where account=?");
-			ps.setString(1,accout);
+			ps.setString(1,account);
 			ps.executeUpdate();
 			
 			message.setFail(0);
@@ -187,6 +200,29 @@ public class MailDAO {
 
 		}
 		return message;
+	}
+	
+	/**
+	 * 在根据account_md5和random_md5查询account
+	 * @param account_md5
+	 * @param random_md5
+	 * @return
+	 */
+	public String queryAccount(String account_md5, String random_md5){
+		String account = null;
+		try {
+			PreparedStatement ps=conn.prepareStatement("select account from verify where account_md5=? and random_md5=?");
+			ps.setString(1, account_md5);
+			ps.setString(2, random_md5);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()){
+				account = rs.getString(1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return account;
 	}
 	
 	/**
