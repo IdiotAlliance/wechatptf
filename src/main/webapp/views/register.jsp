@@ -8,11 +8,11 @@
 <body>
 
     <center>
-		<form method="post" action="http://localhost:8080/wechatpft/services/mail/register">
+		<form method="post" action="http://localhost:8080/wechatptf/services/mail/register">
 			Name:<input type="text" name="account" id="account" /><br /><br />
 			Password:<input type="text" name="password" id="password" /><br /><br />
-			Email:<input type="text" name="email" id="email" /><br /><br />
-			<input type="submit" value="Register""/>
+			Email:<input type="text" name="mail" id="mail" /><br /><br />
+			<input type="submit" value="Register"/>
 		</form>
 	</center>
 
