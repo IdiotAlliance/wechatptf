@@ -2,16 +2,15 @@ package com.dt.wechatptf.services;
 
 import java.sql.Date;
 
-import com.dt.wechatptf.entity.Member;
-import com.dt.wechatptf.util.ReturnMessage;
-
 public interface MemberService {
 	
-	public ReturnMessage addMember(String weiid, String name, int gender, Date birthday, 
+	public String addMember(String weiid, String name, int gender, Date birthday, 
 			String address, String mail, String phone, int companyid);
-	public ReturnMessage deleteMember(String weiid, int companyid);
-	public ReturnMessage updateMember(String weiid, String name, int gender, Date birthday, 
+	public String deleteMember(String weiid, int companyid);
+	public String updateMember(String weiid, String name, int gender, Date birthday, 
 			String address, String mail, String phone, int companyid);
-	public Member queryMember(String weiid, int companyid);
+	public String queryMember(String weiid, int companyid);
+	public int queryPoints(String weiid, int companyid);
+	public String updatePoints(String weiid, int companyid, int addPoints);
 
 }

@@ -17,7 +17,7 @@ public class MemberDAO {
 	Connection conn;
 	
 	public MemberDAO(){
-		conn = DBConnection.getDBConnection();
+		conn = DBConnection.getChatDBConnection();
 	}
 	
 	/**
@@ -216,17 +216,17 @@ public class MemberDAO {
 	public static void main(String[] args){
 		MemberDAO md = new MemberDAO();
 		
-		Member m = new Member();
-		m.setWeiid("mlr");
-		m.setName("Cassie");
-		Calendar c = Calendar.getInstance();
-		c.set(Calendar.YEAR, 1991);
-		c.set(Calendar.MONTH, 2);	//month从0开始
-		c.set(Calendar.DAY_OF_MONTH, 9);
-		long birthday = c.getTimeInMillis();
-		m.setBirthday(new Date(birthday));
-		ReturnMessage rm = md.addMember(m, 1);
-		System.out.println(rm.getMessage());
+//		Member m = new Member();
+//		m.setWeiid("mlr");
+//		m.setName("Cassie");
+//		Calendar c = Calendar.getInstance();
+//		c.set(Calendar.YEAR, 1991);
+//		c.set(Calendar.MONTH, 2);	//month从0开始
+//		c.set(Calendar.DAY_OF_MONTH, 9);
+//		long birthday = c.getTimeInMillis();
+//		m.setBirthday(new Date(birthday));
+//		ReturnMessage rm = md.addMember(m, 1);
+//		System.out.println(rm.getMessage());
 		
 //		ReturnMessage rm = md.deleteMember("mlr", 1);
 //		System.out.println(rm.getMessage());
@@ -238,8 +238,8 @@ public class MemberDAO {
 //		ReturnMessage rm = md.updateMember(m);
 //		System.out.println(rm.getMessage());
 		
-//		Member m = md.queryMember("mlr", 1);
-//		System.out.println(m.getName());
+		Member m = md.queryMember("mlr", 1);
+		System.out.println(m.getName());
 	}
 
 }

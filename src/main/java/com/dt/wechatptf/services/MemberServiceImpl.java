@@ -9,47 +9,61 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 
+import com.dt.wechatptf.dao.MemberCompanyDAO;
 import com.dt.wechatptf.dao.MemberDAO;
 import com.dt.wechatptf.entity.Member;
-import com.dt.wechatptf.util.ReturnMessage;
+import com.google.gson.Gson;
 
-@Path("company/{companyid}")
+@Path("member/{companyid}")
 public class MemberServiceImpl implements MemberService {
 	
-	MemberDAO md = new MemberDAO();
+	final MemberDAO md = new MemberDAO();
+	final MemberCompanyDAO mcd = new MemberCompanyDAO();
+	Gson gson = new Gson();
 
 	@POST
 	@Path("/addMember/{weiid}")
-	public ReturnMessage addMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
+	public String addMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
 			@FormParam("gender") int gender, @FormParam("birthday") Date birthday, 
 			@FormParam("address") String address, @FormParam("mail") String mail, 
 			@FormParam("phone") String phone, @PathParam("companyid") int companyid) {
 		Member member = new Member(weiid, name, gender, birthday, address, mail, phone, 0);
-		return md.addMember(member, companyid);
+		return gson.toJson(md.addMember(member, companyid));
 	}
 
 	@DELETE
 	@Path("/deleteMember/{weiid}")
-	public ReturnMessage deleteMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
-		// TODO Auto-generated method stub
-		return md.deleteMember(weiid, companyid);
+	public String deleteMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
+		return gson.toJson(md.deleteMember(weiid, companyid));
 	}
 
 	@POST
 	@Path("/updateMember/{weiid}")
-	public ReturnMessage updateMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
+	public String updateMember(@PathParam("weiid") String weiid, @FormParam("name") String name, 
 			@FormParam("gender") int gender, @FormParam("birthday") Date birthday, 
 			@FormParam("address") String address, @FormParam("mail") String mail, 
 			@FormParam("phone") String phone, @PathParam("companyid") int companyid) {
 		Member member = new Member(weiid, name, gender, birthday, address, mail, phone, 0);
-		return md.updateMember(member, companyid);
+		return gson.toJson(md.updateMember(member, companyid));
 	}
 
 	@GET
 	@Path("/queryMember/{weiid}")
-	public Member queryMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
-		// TODO Auto-generated method stub
-		return md.queryMember(weiid, companyid);
+	public String queryMember(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
+		return gson.toJson(md.queryMember(weiid, companyid));
+	}
+	
+	@GET
+	@Path("/queryPoints/{weiid}")
+	public int queryPoints(@PathParam("weiid") String weiid, @PathParam("companyid") int companyid) {
+		return mcd.queryPoints(weiid, companyid);
+	}
+	
+	@POST
+	@Path("/updatePoints/{weiid}/{addPoints}")
+	public String updatePoints(@PathParam("weiid") String weiid, 
+			@PathParam("companyid") int companyid, @PathParam("addPoints") int addPoints) {
+		return gson.toJson(mcd.updatePoints(weiid, companyid, addPoints));
 	}
 
 }

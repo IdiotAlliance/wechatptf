@@ -14,7 +14,7 @@ public class MemberCompanyDAO {
 	Connection conn;
 	
 	public MemberCompanyDAO(){
-		conn = DBConnection.getDBConnection();
+		conn = DBConnection.getChatDBConnection();
 	}
 	
 	/**
