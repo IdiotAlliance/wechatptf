@@ -7,9 +7,11 @@
 </head>
 
 <body>
-<center>
-<a href="register.jsp">Register</a><br /><br />
-<a href="login.jsp">Login</a><br /><br />
-</center>
+
+	<center>
+		<a href="register.jsp">Register</a><br /><br />
+		<a href="login.jsp">Login</a><br /><br />
+	</center>
+	
 </body>
 </html>

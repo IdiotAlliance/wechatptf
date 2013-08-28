@@ -65,6 +65,14 @@
 		<servlet-name>ViewStatusMessages</servlet-name>
 		<servlet-class>ch.qos.logback.classic.ViewStatusMessagesServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>FirstServlet</servlet-name>
+		<jsp-file>/views/first.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<jsp-file>/views/register.jsp</jsp-file>
+	</servlet>
 
 
 	<servlet-mapping>
@@ -102,6 +110,14 @@
 	<servlet-mapping>
 		<servlet-name>WechatIntfServlet</servlet-name>
 		<url-pattern>/wechatintf/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>FirstServlet</servlet-name>
+		<url-pattern>/web/first</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/web/register</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>

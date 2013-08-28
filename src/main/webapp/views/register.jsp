@@ -7,29 +7,12 @@
 </head>
 <body>
 
-	<script type="text/javascript" src="jquery.js">
-    </script>
-    <script type="text/javascript">
-    function confirm(){
-       var account=document.getElementById("account").value;
-       var password = document.getElementById("password").value;
-       var mail=document.getElementById("mail").value;
-       $.ajax({
-          	type:"POST",
-            url:"http://localhost:8080/wechatpft/services/mail/register",
-            data:"account="+account+"&password="+password+"&mail="+mail
-       }).done(function(msg){
-            alert("");
-       });
-    }
-    </script>
-        
     <center>
-		<form action="register">
+		<form method="post" action="http://localhost:8080/wechatpft/services/mail/register">
 			Name:<input type="text" name="account" id="account" /><br /><br />
 			Password:<input type="text" name="password" id="password" /><br /><br />
 			Email:<input type="text" name="email" id="email" /><br /><br />
-			<input type="submit" />
+			<input type="submit" value="Register""/>
 		</form>
 	</center>
 
