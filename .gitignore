@@ -5,3 +5,6 @@ target\*
 .project
 .settings/*
 .settings\*
+.settings/*.*
+.settings/
+

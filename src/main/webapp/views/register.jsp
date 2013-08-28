@@ -12,7 +12,7 @@
 			Name:<input type="text" name="account" id="account" /><br /><br />
 			Password:<input type="text" name="password" id="password" /><br /><br />
 			Email:<input type="text" name="email" id="email" /><br /><br />
-			<input type="submit" value="Register""/>
+			<input type="submit" value="Register"/>
 		</form>
 	</center>
 

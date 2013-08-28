@@ -24,7 +24,7 @@
 		<filter-name>WapRequestFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>IpFilter</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -120,12 +120,12 @@
 		<url-pattern>/web/register</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>spring</servlet-name>
-		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
 		<servlet-name>CXFServlet</servlet-name>
 		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>spring</servlet-name>
+		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
 	<error-page>
@@ -136,5 +136,5 @@
 		<error-code>404</error-code>
 		<location>/error/404</location>
 	</error-page>
-	
+
 </web-app>
