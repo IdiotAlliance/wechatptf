@@ -24,7 +24,7 @@
 		<filter-name>WapRequestFilter</filter-name>
 		<filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
 	</filter>
-	
+
 	<filter-mapping>
 		<filter-name>IpFilter</filter-name>
 		<url-pattern>/*</url-pattern>
@@ -73,14 +73,6 @@
 		<servlet-name>RegisterServlet</servlet-name>
 		<jsp-file>/views/register.jsp</jsp-file>
 	</servlet>
-	<servlet>
-		<servlet-name>SendMailServlet</servlet-name>
-		<jsp-file>/views/sendMail.jsp</jsp-file>
-	</servlet>
-	<servlet>
-		<servlet-name>VerifyServlet</servlet-name>
-		<jsp-file>/views/verify.jsp</jsp-file>
-	</servlet>
 
 
 	<servlet-mapping>
@@ -128,20 +120,12 @@
 		<url-pattern>/web/register</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
-		<servlet-name>SendMailServlet</servlet-name>
-		<url-pattern>/web/sendMail</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>VerifyServlet</servlet-name>
-		<url-pattern>/web/verify</url-pattern>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>spring</servlet-name>
 		<url-pattern>/</url-pattern>
-	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>CXFServlet</servlet-name>
-		<url-pattern>/services/*</url-pattern>
 	</servlet-mapping>
 
 	<error-page>
@@ -152,5 +136,5 @@
 		<error-code>404</error-code>
 		<location>/error/404</location>
 	</error-page>
-	
+
 </web-app>
