@@ -11,13 +11,73 @@
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	
 	<style>
-		.headerbtn{
-			width:50px;
-			height:39px
-		}
+		
 	</style>
 </head>
 <body>
+
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var today = new Date();
+		var year = today.getFullYear();
+		var ys = document.getElementById("year");
+		for(var i=0; i<120; i++){
+			ys.options[i] = new Option(year-i,year-i);
+		}
+		
+		var ms = document.getElementById("month");
+		for(var i=0; i<12; i++){
+			ms.options[i] = new Option(i+1,i+1);
+		}
+	});
+	</script>
+	
+	<script type="text/javascript">
+		function setDay(){
+			var ds = document.getElementById("day");
+			var year_slt = document.getElementById("year").value;
+			var month_slt = document.getElementById("month").value;
+			var day = 30;
+			if(year_slt != null & month_slt != null){
+				var y = parseInt(year_slt);
+				var m = parseInt(month_slt);
+				var d= new Date(y,m,0);
+				day = d.getDate();
+				//document.write(day);
+			}
+			for(var i=0; i<day; i++){
+				ds.options[i] = new Option(i+1,i+1);
+			}
+		}
+	</script>
+	
+	<script type="text/javascript">
+        function submit(){
+            var name=document.getElementById("name").value;
+            var gender=0;
+            if(document.getElementById("male").checked){
+            	gender=0;
+            }
+            else if(document.getElementById("female").checked){
+            	gender=1;
+            }
+            var birth_year=parseInt(document.getElementById("year").value);
+            var birth_month=parseInt(document.getElementById("month").value);
+            var birth_day=parseInt(document.getElementById("day").value);
+            var address=document.getElementById("address").value;
+            var mail=document.getElementById("mail").value;
+            var phone=document.getElementById("phone").value;
+            $.ajax({
+                type:"POST",
+                url:"http://localhost:8080/wechatptf/wap/1/2/bind",
+                data:"name="+name+"&gender="+gender+"&birth_year="+birth_year+"&birth_month="+birth_month
+                +"&birth_day="+birth_day+"&address="+address+"&mail="+mail+"&phone="+phone
+            }).done(function(msg){
+                
+            });
+        }
+	</script>
 
 <div data-role="page">
 	<div data-role="header" data-theme="a">
@@ -47,49 +107,72 @@
 	        	<label for="name" class="ui-input-text">昵称：</label>
 	        	<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
+			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
-				<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical">
+				<fieldset data-role="controlgroup" id="gender_set" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical">
 					<div role="heading" class="ui-controlgroup-label">性别：</div>
 					<div class="ui-controlgroup-controls">
 						<div class="ui-radio">
-							<input type="radio" name="gender" id="male" value=0 checked="checked">
+							<input type="radio" name="gender" id="male" value="0" checked="checked">
 							<label for="male" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="radio-off" data-theme="c" class="ui-btn ui-btn-icon-left ui-corner-top ui-btn-up-c ui-radio-on">
 								<span class="ui-btn-inner ui-corner-top">
 									<span class="ui-btn-text">男</span>
-									<span class="ui-icon ui-icon-shadow ui-icon-radio-on">&nbsp;</span>
 								</span>
 							</label>
 						</div>
 			         	<div class="ui-radio">
-			         		<input type="radio" name="gender" id="female" value=1>
+			         		<input type="radio" name="gender" id="female" value="1">
 			         		<label for="female" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="radio-off" data-theme="c" class="ui-btn ui-btn-icon-left ui-radio-off ui-corner-bottom ui-controlgroup-last ui-btn-up-c">
 			         			<span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last">
 			         				<span class="ui-btn-text">女</span>
-			         				<span class="ui-icon ui-icon-radio-off ui-icon-shadow">&nbsp;</span>
 			         			</span>
 			         		</label>
 			         	</div>
 			        </div>
 				</fieldset>
 			</li>
-			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
-	        	<label for="birthday" class="ui-input-text">出生日期：</label>
-	        	<input type="text" name="birthday" id="birthday" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+					
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
+				<label class="select ui-select">出生日期：</label>
+				<div class="ui-controlgroup-controls">
+					<span class="ui-select">
+						<select name="year" id="year">
+						</select>
+						<label class="ui-input-text">年</label>
+					</span>
+					<span class="ui-select">
+						<select name="month" id="month">
+						</select>
+						<label class="ui-input-text">月</label>
+					</span>
+					<span class="ui-select">
+						<select name="day" id="day" onfocus="setDay()">
+						</select>
+						<label class="ui-input-text">日</label>
+					</span>
+				</div>
 			</li>
+			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
 	        	<label for="address" class="ui-input-text">地址：</label>
 				<textarea cols="40" rows="8" name="address" id="address" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
 			</li>
+			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
 	        	<label for="mail" class="ui-input-text">邮箱：</label>
 	        	<input type="text" name="mail" id="mail" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
+			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
 	        	<label for="phone" class="ui-input-text">电话：</label>
 	        	<input type="text" name="phone" id="phone" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
 		</ul>
 	</form>
+	</div>
+	
+	<div data-role="footer">
+		<h4>2012-2013 D&T Software, No Rights Reserved</h4>
 	</div>
 	
 </div>
