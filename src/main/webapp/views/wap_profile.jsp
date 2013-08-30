@@ -39,6 +39,59 @@
 			</span>
 		</a>
 	</div>
+	
+	<div class="content-primary">
+	<form>
+		<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
+	        	<label for="name" class="ui-input-text">昵称：</label>
+	        	<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+			</li>
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
+				<fieldset data-role="controlgroup" class="ui-corner-all ui-controlgroup ui-controlgroup-vertical">
+					<div role="heading" class="ui-controlgroup-label">性别：</div>
+					<div class="ui-controlgroup-controls">
+						<div class="ui-radio">
+							<input type="radio" name="gender" id="male" value=0 checked="checked">
+							<label for="male" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="radio-off" data-theme="c" class="ui-btn ui-btn-icon-left ui-corner-top ui-btn-up-c ui-radio-on">
+								<span class="ui-btn-inner ui-corner-top">
+									<span class="ui-btn-text">男</span>
+									<span class="ui-icon ui-icon-shadow ui-icon-radio-on">&nbsp;</span>
+								</span>
+							</label>
+						</div>
+			         	<div class="ui-radio">
+			         		<input type="radio" name="gender" id="female" value=1>
+			         		<label for="female" data-corners="true" data-shadow="false" data-iconshadow="true" data-wrapperels="span" data-icon="radio-off" data-theme="c" class="ui-btn ui-btn-icon-left ui-radio-off ui-corner-bottom ui-controlgroup-last ui-btn-up-c">
+			         			<span class="ui-btn-inner ui-corner-bottom ui-controlgroup-last">
+			         				<span class="ui-btn-text">女</span>
+			         				<span class="ui-icon ui-icon-radio-off ui-icon-shadow">&nbsp;</span>
+			         			</span>
+			         		</label>
+			         	</div>
+			        </div>
+				</fieldset>
+			</li>
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
+	        	<label for="birthday" class="ui-input-text">出生日期：</label>
+	        	<input type="text" name="birthday" id="birthday" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+			</li>
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
+	        	<label for="address" class="ui-input-text">地址：</label>
+				<textarea cols="40" rows="8" name="address" id="address" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset"></textarea>
+			</li>
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
+	        	<label for="mail" class="ui-input-text">邮箱：</label>
+	        	<input type="text" name="mail" id="mail" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+			</li>
+			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
+	        	<label for="phone" class="ui-input-text">电话：</label>
+	        	<input type="text" name="phone" id="phone" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+			</li>
+		</ul>
+	</form>
+	</div>
+	
 </div>
 
 </body>
