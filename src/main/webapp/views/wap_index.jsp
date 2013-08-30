@@ -31,7 +31,7 @@
 <div data-role="page">
 
 	<!-- this is a common header, should be reused, but I don't know how -->
-	<div data-role="header" data-theme="a">
+	<div data-role="header" data-theme="a" data-position="fixed">
 		<h1 data-role="ui-title" role="heading" arial-level="1">清秋梧桐</h1>
 		<a href="/wechatptf/views/components/account_bind_dialog.html"
 			 data-icon="gear" data-rel="dialog" data-transition="pop"
@@ -52,10 +52,10 @@
 		</div>	
 	</div><!-- /header -->
 		
-	<div data-role="content">	
+	<div data-role="content" role="main">	
 			
 		<!-- hot products -->
-		<div>
+		<div class="content-primary">
 			<h6>热门产品</h6>
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
@@ -93,12 +93,12 @@
 		</div>
 		
 		<!-- products categories -->
-		<div>
+		<div class="content-primary" data-theme="c">
 			<h6>产品分类</h6>
 			<ul data-role="listview" data-filter="true" class="ui-listview">
 				<li data-corners="false" data-shadow="false" data-iconshadow="true" 
 					data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
-					data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+					class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
 					<div class="ui-btn-inner ui-li">
 						<div class="ui-btn-text">
 							<a href="#/uploads/apidocs/jquery-mobile/docs/lists/lists-nested.html&amp;ui-page=2-8" class="ui-link-inherit">
@@ -112,7 +112,7 @@
 				</li>
 				<li data-corners="false" data-shadow="false" data-iconshadow="true" 
 					data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
-					data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+					class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
 					<div class="ui-btn-inner ui-li">
 						<div class="ui-btn-text">
 							<a href="#/uploads/apidocs/jquery-mobile/docs/lists/lists-nested.html&amp;ui-page=2-8" class="ui-link-inherit">
@@ -126,7 +126,7 @@
 				</li>
 				<li data-corners="false" data-shadow="false" data-iconshadow="true" 
 					data-wrapperels="div" data-icon="arrow-r" data-iconpos="right" 
-					data-theme="c" class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
+					class="ui-btn ui-btn-icon-right ui-li-has-arrow ui-li ui-btn-up-c">
 					<div class="ui-btn-inner ui-li">
 						<div class="ui-btn-text">
 							<a href="#/uploads/apidocs/jquery-mobile/docs/lists/lists-nested.html&amp;ui-page=2-8" class="ui-link-inherit">
