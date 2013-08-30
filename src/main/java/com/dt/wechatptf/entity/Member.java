@@ -7,7 +7,7 @@ public class Member {
 	int id;
 	String weiid;	//微信号
 	String name;
-	int gender;		//性别，0男，1女，3未知	
+	int gender;		//性别，0男，1女，2未知	
 	Date birthday;
 	String address;
 	String mail;

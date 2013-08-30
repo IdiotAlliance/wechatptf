@@ -39,7 +39,7 @@ public class SendMail {
 			message.setSubject("邮箱验证");
 			String url=pu.getStringProperty("mail.url");
 			String m="<a href="+url+"?account_md5="+account_md5+"&random_md5="+random_md5+">" +
-					url+"?account_md5="+account_md5+"&random+md5="+random_md5+"</a>";
+					url+"?account_md5="+account_md5+"&random_md5="+random_md5+"</a>";
 			message.setContent(m,"text/html;charset=utf8");
 			Transport.send(message);
 	}

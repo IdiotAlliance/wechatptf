@@ -73,6 +73,14 @@
 		<servlet-name>RegisterServlet</servlet-name>
 		<jsp-file>/views/register.jsp</jsp-file>
 	</servlet>
+	<servlet>
+		<servlet-name>SendMailServlet</servlet-name>
+		<jsp-file>/views/senMail.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>VerifyServlet</servlet-name>
+		<jsp-file>/views/verify.jsp</jsp-file>
+	</servlet>
 
 
 	<servlet-mapping>
@@ -118,6 +126,14 @@
 	<servlet-mapping>
 		<servlet-name>RegisterServlet</servlet-name>
 		<url-pattern>/web/register</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SendMailServlet</servlet-name>
+		<url-pattern>/web/sendMail</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VerifyServlet</servlet-name>
+		<url-pattern>/web/verify</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
 		<servlet-name>CXFServlet</servlet-name>
