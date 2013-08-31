@@ -8,7 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 @Controller
 @RequestMapping(value="upload/{companyId}/{wxid}")
-public class UploadController {
+public class UploadController extends BaseController{
 
 	@RequestMapping(value="/img", method=RequestMethod.POST)
 	public String uploadImage(@RequestParam("img") MultipartFile file){

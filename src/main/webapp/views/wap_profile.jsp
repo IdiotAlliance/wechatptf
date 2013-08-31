@@ -9,61 +9,13 @@
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	
-	<style>
-		
+	<style type="text/css">
+		#subhidbtn{
+			display: none;
+		}
 	</style>
 </head>
 <body>
-
-	<script type="text/javascript" src="jquery.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		var today = new Date();
-		var year = today.getFullYear();
-		var ys = document.getElementById("year");
-		for(var i=0; i<120; i++){
-			ys.options[i] = new Option(year-i,year-i);
-		}
-		
-		var ms = document.getElementById("month");
-		for(var i=0; i<12; i++){
-			ms.options[i] = new Option(i+1,i+1);
-		}
-	});
-	</script>
-	
-	<script type="text/javascript">
-		function checkMail(){
-			var mail = document.getElementById("mail").value;
-			var reMail =/^(?:[a-zA-Z0-9]+[_\-\+\.]?)*[a-zA-Z0-9]+@(?:([a-zA-Z0-9]+[_\-]?)*[a-zA-Z0-9]+\.)+([a-zA-Z]{2,})+$/;
-			var s=new RegExp(reMail);
-
-			if(! s.test(mail)){
-				alert("邮箱不合法，请重新填写！");
-				document.getElementById('mail').value="";
-			}
-		}
-	</script>
-	
-	<script type="text/javascript">
-		function setDay(){
-			var ds = document.getElementById("day");
-			var year_slt = document.getElementById("year").value;
-			var month_slt = document.getElementById("month").value;
-			var day = 31;
-			if(year_slt != null & month_slt != null){
-				var y = parseInt(year_slt);
-				var m = parseInt(month_slt);
-				var d= new Date(y,m,0);
-				day = d.getDate();
-				//document.write(day);
-			}
-			for(var i=0; i<day; i++){
-				ds.options[i] = new Option(i+1,i+1);
-			}
-		}
-	</script>
 	
 	<!--  
 	<script type="text/javascript">
@@ -93,15 +45,6 @@
         }
 	</script>
 	-->
-	
-	<script type="text/javascript">
-	 	function submit(){
-	 		document.getElementById("subhidbtn").removeAttribute("disabled");
-	 		$("#subhidbtn").click();
-	 		document.getElementById("subhidbtn").setAttribute("disabled", "disabled");
-		}
-	</script>
-
 <div data-role="page">
 	<div data-role="header" data-theme="a">
 		<h1 data-role="ui-title" role="heading" arial-level="1">清秋梧桐</h1>
@@ -191,7 +134,7 @@
 	        	<input type="text" name="phone" id="phone" value="" maxlength="20" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
 		</ul>
-		<input type="submit" id="subhidbtn" disabled="disabled">
+		<input type="submit" id="subhidbtn" disabled="disabled" class="hidden">
 	</form>
 	</div>
 	
@@ -199,6 +142,54 @@
 		<h4>2012-2013 D&T Software, No Rights Reserved</h4>
 	</div>
 	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var today = new Date();
+			var year = today.getFullYear();
+			var ys = document.getElementById("year");
+			for(var i=0; i<120; i++){
+				ys.options[i] = new Option(year-i,year-i);
+			}
+		
+			var ms = document.getElementById("month");
+			for(var i=0; i<12; i++){
+				ms.options[i] = new Option(i+1,i+1);
+			}
+		});
+		function checkMail(){
+			var mail = document.getElementById("mail").value;
+			var reMail =/^(?:[a-zA-Z0-9]+[_\-\+\.]?)*[a-zA-Z0-9]+@(?:([a-zA-Z0-9]+[_\-]?)*[a-zA-Z0-9]+\.)+([a-zA-Z]{2,})+$/;
+			var s=new RegExp(reMail);
+
+			if(! s.test(mail)){
+				alert("邮箱不合法，请重新填写！");
+				document.getElementById('mail').value="";
+			}
+		}
+		
+		function setDay(){
+			var ds = document.getElementById("day");
+			var year_slt = document.getElementById("year").value;
+			var month_slt = document.getElementById("month").value;
+			var day = 31;
+			if(year_slt != null & month_slt != null){
+				var y = parseInt(year_slt);
+				var m = parseInt(month_slt);
+				var d= new Date(y,m,0);
+				day = d.getDate();
+				//document.write(day);
+			}
+			for(var i=0; i<day; i++){
+				ds.options[i] = new Option(i+1,i+1);
+			}
+		}
+		
+		function submit(){
+	 		document.getElementById("subhidbtn").removeAttribute("disabled");
+	 		$("#subhidbtn").click();
+	 		document.getElementById("subhidbtn").setAttribute("disabled", "disabled");
+		}
+	</script>
 </div>
 
 </body>

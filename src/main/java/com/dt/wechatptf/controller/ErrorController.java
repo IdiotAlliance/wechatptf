@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping(value="error")
-public class ErrorController {
+public class ErrorController extends BaseController{
 	
 	/***
 	 * Controller for 403 error page
