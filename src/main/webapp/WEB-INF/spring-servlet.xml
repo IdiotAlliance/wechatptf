@@ -27,7 +27,7 @@
 		</property>
 	</bean>	
 	
-	<bean class="com.dt.wechatptf.filter.IpFilter" id="IpFilter"></bean>
+	<bean class="com.dt.wechatptf.filter.IllegalRequestFilter" id="IllegalRequestFilter"></bean>
 	<bean class="com.dt.wechatptf.filter.EncodingFilter" id="EncodingFilter"></bean>
 	<bean class="com.dt.wechatptf.filter.WapRequestFilter" id="WapRequestFilter"></bean>
 
