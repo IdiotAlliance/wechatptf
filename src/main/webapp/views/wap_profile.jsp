@@ -34,11 +34,24 @@
 	</script>
 	
 	<script type="text/javascript">
+		function checkMail(){
+			var mail = document.getElementById("mail").value;
+			var reMail =/^(?:[a-zA-Z0-9]+[_\-\+\.]?)*[a-zA-Z0-9]+@(?:([a-zA-Z0-9]+[_\-]?)*[a-zA-Z0-9]+\.)+([a-zA-Z]{2,})+$/;
+			var s=new RegExp(reMail);
+
+			if(! s.test(mail)){
+				alert("邮箱不合法，请重新填写！");
+				document.getElementById('mail').value="";
+			}
+		}
+	</script>
+	
+	<script type="text/javascript">
 		function setDay(){
 			var ds = document.getElementById("day");
 			var year_slt = document.getElementById("year").value;
 			var month_slt = document.getElementById("month").value;
-			var day = 30;
+			var day = 31;
 			if(year_slt != null & month_slt != null){
 				var y = parseInt(year_slt);
 				var m = parseInt(month_slt);
@@ -52,6 +65,7 @@
 		}
 	</script>
 	
+	<!--  
 	<script type="text/javascript">
         function submit(){
             var name=document.getElementById("name").value;
@@ -78,6 +92,15 @@
             });
         }
 	</script>
+	-->
+	
+	<script type="text/javascript">
+	 	function submit(){
+	 		document.getElementById("subhidbtn").removeAttribute("disabled");
+	 		$("#subhidbtn").click();
+	 		document.getElementById("subhidbtn").setAttribute("disabled", "disabled");
+		}
+	</script>
 
 <div data-role="page">
 	<div data-role="header" data-theme="a">
@@ -101,11 +124,11 @@
 	</div>
 	
 	<div class="content-primary">
-	<form>
+	<form method="post" action="/wechatptf/wap/1/2/bind">
 		<ul data-role="listview" data-inset="true" class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
 	        	<label for="name" class="ui-input-text">昵称：</label>
-	        	<input type="text" name="name" id="name" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+	        	<input type="text" name="name" id="name" value="" maxlength="255" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
 			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c">
@@ -160,14 +183,15 @@
 			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
 	        	<label for="mail" class="ui-input-text">邮箱：</label>
-	        	<input type="text" name="mail" id="mail" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+	        	<input type="text" name="mail" id="mail" value="" maxlength="64" onblur="checkMail()" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
 			
 			<li data-role="fieldcontain" class="ui-field-contain ui-body ui-br ui-li ui-li-static ui-body-c ui-corner-top">
 	        	<label for="phone" class="ui-input-text">电话：</label>
-	        	<input type="text" name="phone" id="phone" value="" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
+	        	<input type="text" name="phone" id="phone" value="" maxlength="20" class="ui-input-text ui-body-c ui-corner-all ui-shadow-inset">
 			</li>
 		</ul>
+		<input type="submit" id="subhidbtn" disabled="disabled">
 	</form>
 	</div>
 	
