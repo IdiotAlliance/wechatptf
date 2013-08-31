@@ -42,16 +42,21 @@ public class WapController {
 	
 	@RequestMapping(value="/bind", method=RequestMethod.POST)
 	public ModelAndView bind(@PathVariable("companyid") int cid, @PathVariable("wxid") String wid, 
-			String name, int gender, int birth_year, int birth_month, int birth_day, 
-			String address, String mail, String phone){
+			String name, String gender, String year, String month, String day, String address, 
+			String mail, String phone){
+		int gen = Integer.parseInt(gender);
+		int y = Integer.parseInt(year);
+		int m = Integer.parseInt(month);
+		int d = Integer.parseInt(day);
+		
 		Member mem = new Member();
 		mem.setWeiid(wid);
 		mem.setName(name);
-		mem.setGender(gender);
+		mem.setGender(gen);
 		Calendar c = Calendar.getInstance();
-		c.set(Calendar.YEAR, birth_year);
-		c.set(Calendar.MONTH, birth_month-1);	//month从0开始
-		c.set(Calendar.DAY_OF_MONTH, birth_day);
+		c.set(Calendar.YEAR, y);
+		c.set(Calendar.MONTH, m-1);	//month从0开始
+		c.set(Calendar.DAY_OF_MONTH, d);
 		long birthday = c.getTimeInMillis();
 		mem.setBirthday(new Date(birthday));
 		mem.setAddress(address);
@@ -64,7 +69,7 @@ public class WapController {
 		Map<String, String> ds = new HashMap<String, String>();
 		ds.put("fail", rm.getFail()+"");
 		ds.put("msg", rm.getMessage());
-		ModelAndView mv = new ModelAndView("wap_bind_success");
+		ModelAndView mv = new ModelAndView("redirect:http://localhost:8080/wechatptf/wap/1/2/bindSuccess");
 		mv.addAllObjects(ds);
 		return mv;
 	}

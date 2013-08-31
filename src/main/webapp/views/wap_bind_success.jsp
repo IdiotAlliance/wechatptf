@@ -19,8 +19,8 @@
 	<div data-role="header" data-theme="a">
 		<h1 data-role="ui-title" role="heading" arial-level="1">清秋梧桐</h1>
 	</div>
-	<p>${fail}</p>
-	<p>${msg}</p>
+	<input type="text" value="Fail code:${fail}">
+	<input type="text" value="Fail Message:${msg}">
 	<div data-role="footer">
 		<h4>2012-2013 D&T Software, No Rights Reserved</h4>
 	</div>
