@@ -43,10 +43,10 @@ public class MemberDAO {
 			if (rs.next()) {
                 ret = (Serializable) rs.getObject(1);
             }
-			long id = (Long)ret;
+			long memberid = (Long)ret;
 			
 			PreparedStatement ps2 = conn.prepareStatement("insert into member_company (memberid,weiid,companyid) values(?,?,?)");
-			ps2.setLong(1, id);
+			ps2.setLong(1, memberid);
 			ps2.setString(2, member.getWeiid());
 			ps2.setInt(3, companyid);
 			ps2.executeUpdate();

@@ -1,32 +1,27 @@
 package com.dt.wechatptf.entity;
 
 import java.sql.Date;
+import java.util.ArrayList;
 
 public class Product {
 	
 	int id;
-	int companyid;
 	String name;
 	double price;
 	String description;
-	byte picture;
-	Date valid_date;		//有效期
+	String cover;			//封面图片路径
+	Date start_date;		//开始日期
+	Date end_date;			//结束日期
 	int point;
 	int stock;				//库存
-	int type;
+	ArrayList<String> pictures;
+	ArrayList<Integer> type;
 	
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
-	}
-	
-	public int getCompanyid() {
-		return companyid;
-	}
-	public void setCompanyid(int companyid) {
-		this.companyid = companyid;
 	}
 	
 	public String getName() {
@@ -50,18 +45,25 @@ public class Product {
 		this.description = description;
 	}
 	
-	public byte getPicture() {
-		return picture;
+	public String getCover() {
+		return cover;
 	}
-	public void setPicture(byte picture) {
-		this.picture = picture;
+	public void setCover(String cover) {
+		this.cover = cover;
 	}
 	
-	public Date getValid_date() {
-		return valid_date;
+	public Date getStart_date() {
+		return start_date;
 	}
-	public void setValid_date(Date valid_date) {
-		this.valid_date = valid_date;
+	public void setStart_date(Date start_date) {
+		this.start_date = start_date;
+	}
+	
+	public Date getEnd_date() {
+		return end_date;
+	}
+	public void setEnd_date(Date end_date) {
+		this.end_date = end_date;
 	}
 	
 	public int getPoint() {
@@ -77,11 +79,18 @@ public class Product {
 	public void setStock(int stock) {
 		this.stock = stock;
 	}
+	public ArrayList<String> getPictures() {
+		return pictures;
+	}
 	
-	public int getType() {
+	public void setPictures(ArrayList<String> pictures) {
+		this.pictures = pictures;
+	}
+	
+	public ArrayList<Integer> getType() {
 		return type;
 	}
-	public void setType(int type) {
+	public void setType(ArrayList<Integer> type) {
 		this.type = type;
 	}
 
