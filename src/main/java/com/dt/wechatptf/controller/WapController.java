@@ -5,6 +5,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,10 +16,11 @@ import org.springframework.web.servlet.ModelAndView;
 import com.dt.wechatptf.dao.MemberDAO;
 import com.dt.wechatptf.entity.Member;
 import com.dt.wechatptf.util.ReturnMessage;
+import com.dt.wechatptf.util.TokenUtil;
 
 @Controller
 @RequestMapping(value="wap/{companyid}/{wxid}")
-public class WapController {
+public class WapController extends BaseController{
 	
 	@RequestMapping(value="/index", method=RequestMethod.GET)
 	public ModelAndView index(@PathVariable("companyid") String cid, 
@@ -41,9 +44,12 @@ public class WapController {
 	}
 	
 	@RequestMapping(value="/bind", method=RequestMethod.POST)
-	public ModelAndView bind(@PathVariable("companyid") int cid, @PathVariable("wxid") String wid, 
+	public ModelAndView bind(HttpServletRequest request, @PathVariable("companyid") int cid, @PathVariable("wxid") String wid, 
 			String name, String gender, String year, String month, String day, String address, 
 			String mail, String phone){
+		
+		String uuid = (String) request.getSession().getAttribute(TokenUtil.KEY_UUID);
+		
 		int gen = Integer.parseInt(gender);
 		int y = Integer.parseInt(year);
 		int m = Integer.parseInt(month);
@@ -69,14 +75,19 @@ public class WapController {
 		Map<String, String> ds = new HashMap<String, String>();
 		ds.put("fail", rm.getFail()+"");
 		ds.put("msg", rm.getMessage());
+		this.putValue(uuid, ds);
+		
 		ModelAndView mv = new ModelAndView("redirect:http://localhost:8080/wechatptf/wap/1/2/bindSuccess");
-		mv.addAllObjects(ds);
 		return mv;
 	}
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value="/bindSuccess", method=RequestMethod.GET)
-	public ModelAndView bindSuccess(){
-		return new ModelAndView("wap_bind_success");
+	public ModelAndView bindSuccess(HttpServletRequest request){
+		String uuid = (String) request.getSession().getAttribute(TokenUtil.KEY_UUID);
+		ModelAndView mv = new ModelAndView("wap_bind_success");
+		mv.addAllObjects((Map<String, String>)this.getValue(uuid));
+		return mv;
 	}
 
 	@RequestMapping(value="/product", method=RequestMethod.GET)

@@ -4,28 +4,29 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-	<title>绑定成功</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>${category}</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	
-	<style>
-		
-	</style>
 </head>
 <body>
-
-<div data-role="page">
-	<div data-role="header" data-theme="a">
-		<h1 data-role="ui-title" role="heading" arial-level="1">清秋梧桐</h1>
+	
+	<div data-role="page">
+	
+		<div data-role="header" data-theme="a">
+			
+		</div>
+		
+		<div data-role="content" class="content-primary">
+			
+		</div>
+		
+		<div data-role="footer" data-theme="a">
+			<h4>2012-2013 D&T Software, No Rights Reserved</h4>
+		</div>
 	</div>
-	<input type="text" value="Fail code:${fail}">
-	<input type="text" value="Fail Message:${msg}">
-	<div data-role="footer">
-		<h4>2012-2013 D&T Software, No Rights Reserved</h4>
-	</div>
-</div>
-
+	
 </body>
 </html>
