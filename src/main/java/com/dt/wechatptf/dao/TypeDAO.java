@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.dt.wechatptf.util.ReturnMessage;
 
@@ -74,7 +75,7 @@ public class TypeDAO {
 			PreparedStatement ps=conn.prepareStatement("select name from type where id=?");
 			ps.setInt(1, typeid);
 			ResultSet rs=ps.executeQuery();
-			while (rs.next()){
+			if (rs.next()){
 				name = rs.getString(1);
 			}
 		} catch (SQLException e) {
@@ -82,6 +83,47 @@ public class TypeDAO {
 			e.printStackTrace();
 		}
 		return name;
+	}
+	
+	/**
+	 * 根据名称查询商品类型的id
+	 * @param name
+	 * @return
+	 */
+	public int queryId(String name){
+		int id = 0;
+		try {
+			PreparedStatement ps=conn.prepareStatement("select id from type where name=?");
+			ps.setString(1, name);
+			ResultSet rs=ps.executeQuery();
+			if (rs.next()){
+				name = rs.getString(1);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return id;
+	}
+	
+	/**
+	 * 查询所有商品类型的名称
+	 * @return
+	 */
+	public ArrayList<String> queryAllType(){
+		ArrayList<String> types = new ArrayList<String>();
+		try {
+			PreparedStatement ps=conn.prepareStatement("select name from type");
+			ResultSet rs=ps.executeQuery();
+			while (rs.next()){
+				String name = rs.getString(1);
+				types.add(name);
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return types;
 	}
 	
 	public static void main(String[] args){
