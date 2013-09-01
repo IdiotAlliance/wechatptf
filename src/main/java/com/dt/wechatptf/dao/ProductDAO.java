@@ -16,7 +16,7 @@ import com.dt.wechatptf.util.ReturnMessage;
 public class ProductDAO {
 	
 	Connection conn;
-	final PictureDAO pd = new PictureDAO();
+	final ProductPictureDAO pd = new ProductPictureDAO();
 	final ProductTypeDAO ptd = new ProductTypeDAO();
 	
 	public ProductDAO(){
