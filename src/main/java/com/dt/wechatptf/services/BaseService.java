@@ -2,8 +2,10 @@ package com.dt.wechatptf.services;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.apache.cxf.message.Message;
@@ -37,4 +39,26 @@ public abstract class BaseService {
 		return null;
 	}
 	
+	protected final HttpServletResponse getResponse(){
+		final Message message = PhaseInterceptorChain.getCurrentMessage();
+		return (HttpServletResponse)message.get(AbstractHTTPDestination.HTTP_RESPONSE);
+	}
+	
+	/***
+	 * 从<code>HttpServletResponse</code>中获取<code></code>
+	 * @return
+	 */
+	protected final OutputStream getOutputStream(){
+		try {
+			return getResponse().getOutputStream();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return null;
+	}
+	
+	protected final void setContentType(String type){
+		getResponse().setContentType(type);
+	}
 }

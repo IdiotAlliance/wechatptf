@@ -13,6 +13,11 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import com.dt.wechatptf.util.TokenUtil;
 
+/***
+ * 给请求session添加uuid属性
+ * @author lvxiang
+ *
+ */
 public class SessionFilter extends OncePerRequestFilter{
 	
 	private static final Logger logger = LoggerFactory.getLogger(SessionFilter.class);
