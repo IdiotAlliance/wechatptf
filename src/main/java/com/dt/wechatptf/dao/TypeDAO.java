@@ -83,5 +83,18 @@ public class TypeDAO {
 		}
 		return name;
 	}
+	
+	public static void main(String[] args){
+		TypeDAO td = new TypeDAO();
+		
+//		ReturnMessage rm = td.addType("Food");
+//		System.out.println(rm.getMessage());
+		
+//		ReturnMessage rm = td.deleteType(3);
+//		System.out.println(rm.getMessage());
+		
+		String name = td.queryType(4);
+		System.out.println(name);
+	}
 
 }

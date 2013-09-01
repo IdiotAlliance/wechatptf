@@ -2,11 +2,13 @@ package com.dt.wechatptf.dao;
 
 import java.io.Serializable;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 import com.dt.wechatptf.entity.Product;
 import com.dt.wechatptf.util.ReturnMessage;
@@ -194,6 +196,51 @@ public class ProductDAO {
 			e.printStackTrace();
 		}
 		return pros;
+	}
+	
+	public static void main(String[] args){
+		ProductDAO pd = new ProductDAO();
+		
+//		Calendar s = Calendar.getInstance();
+//		s.set(Calendar.YEAR, 2013);
+//		s.set(Calendar.MONTH, 8);	//month从0开始
+//		s.set(Calendar.DAY_OF_MONTH, 1);
+//		long s_d = s.getTimeInMillis();
+//		
+//		Calendar e = Calendar.getInstance();
+//		e.set(Calendar.YEAR, 2013);
+//		e.set(Calendar.MONTH, 11);	//month从0开始
+//		e.set(Calendar.DAY_OF_MONTH, 31);
+//		long e_d = e.getTimeInMillis();
+//		
+//		ArrayList<String> pics = new ArrayList<String>();
+//		pics.add("img/pics/2/7/1");
+//		pics.add("img/pics/2/7/2");
+//		
+//		ArrayList<Integer> type = new ArrayList<Integer>();
+//		type.add(4);
+//		type.add(5);
+//		
+//		Product p = new Product("pizza",44.5,"delicious","/img/cover/2/7",new Date(s_d),new Date(e_d),45,20,pics,type);
+		
+//		ReturnMessage rm = pd.addProduct(p, 2);
+//		System.out.println(rm.getMessage());
+		
+//		p.setId(1);
+//		p.setPrice(48);
+//		ReturnMessage rm = pd.updateProduct(p);
+//		System.out.println(rm.getMessage());
+		
+//		Product p = pd.queryProduct(1);
+//		System.out.println(p.getDescription());
+//		
+//		ArrayList<Product> pros = pd.queryAllPro(2);
+//		for(int i=0; i<pros.size(); i++){
+//			System.out.println(pros.get(i).getName());
+//		}
+		
+		ReturnMessage rm = pd.deleteProduct(1);
+		System.out.println(rm.getMessage());
 	}
 
 }

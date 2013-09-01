@@ -17,6 +17,22 @@ public class Product {
 	ArrayList<String> pictures;
 	ArrayList<Integer> type;
 	
+	public Product(){}
+	
+	public Product(String name, double price, String description, String cover, Date start_date, 
+			Date end_date, int point, int stock, ArrayList<String> pics, ArrayList<Integer> type){
+		this.name = name;
+		this.price = price;
+		this.description = description;
+		this.cover = cover;
+		this.start_date = start_date;
+		this.end_date = end_date;
+		this.point = point;
+		this.stock = stock;
+		this.pictures = pics;
+		this.type = type;
+	}
+	
 	public int getId() {
 		return id;
 	}

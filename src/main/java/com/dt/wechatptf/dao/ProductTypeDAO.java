@@ -45,11 +45,12 @@ public class ProductTypeDAO {
 	 * @param productid
 	 * @return
 	 */
-	public ReturnMessage deleteProType(int productid){
+	public ReturnMessage deleteProType(int productid, int typeid){
 		ReturnMessage message = new ReturnMessage();
 		try {
-			PreparedStatement ps=conn.prepareStatement("delete from product_type where productid=?");
+			PreparedStatement ps=conn.prepareStatement("delete from product_type where productid=? and typeid=?");
 			ps.setInt(1,productid);
+			ps.setInt(2, typeid);
 			ps.executeUpdate();
 			message.setFail(0);
 			message.setMessage("删除商品指定类型成功！");
@@ -102,6 +103,23 @@ public class ProductTypeDAO {
 			e.printStackTrace();
 		}
 		return pros;
+	}
+	
+	public static void main(String[] args){
+		ProductTypeDAO ptd = new ProductTypeDAO();
+		
+//		ArrayList<Integer> types = ptd.queryTypeOfPro(1);
+//		for(int i =0; i<types.size();i++){
+//			System.out.println(types.get(i));
+//		}
+//		
+//		ArrayList<Integer> pics = ptd.queryProOfType(4);
+//		for(int i =0; i<pics.size();i++){
+//			System.out.println(pics.get(i));
+//		}
+		
+		ReturnMessage rm = ptd.deleteProType(1, 5);
+		System.out.println(rm.getMessage());
 	}
 
 }

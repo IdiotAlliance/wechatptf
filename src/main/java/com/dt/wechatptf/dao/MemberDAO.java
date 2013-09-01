@@ -238,8 +238,8 @@ public class MemberDAO {
 //		ReturnMessage rm = md.updateMember(m);
 //		System.out.println(rm.getMessage());
 		
-		Member m = md.queryMember("mlr", 1);
-		System.out.println(m.getName());
+//		Member m = md.queryMember("mlr", 1);
+//		System.out.println(m.getName());
 	}
 
 }
