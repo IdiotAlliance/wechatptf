@@ -197,7 +197,7 @@ public class MemberDAO {
 	 * @return
 	 */
 	public int queryMemberid(String weiid, int companyid){
-		int memberid = 0;
+		int memberid = -1;
 		try {
 			PreparedStatement ps=conn.prepareStatement("select memberid from member_company where weiid=? and companyid=?");
 			ps.setString(1, weiid);
