@@ -2,6 +2,6 @@ package com.dt.wechatptf.services;
 
 public interface ResourcesService {
 	
-	public byte[] serveImage(String path);
+	public void serveImage(String path, String name);
 	
 }

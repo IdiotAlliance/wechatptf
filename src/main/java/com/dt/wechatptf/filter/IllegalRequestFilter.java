@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.web.filter.OncePerRequestFilter;
 
+/***
+ * 过滤非法的请求
+ * @author lvxiang
+ *
+ */
 public class IllegalRequestFilter extends OncePerRequestFilter{
 
 	private static final String[] black_lists = {".jsp"};
