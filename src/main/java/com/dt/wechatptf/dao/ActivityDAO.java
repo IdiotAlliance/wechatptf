@@ -6,7 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import com.dt.wechatptf.entity.Activity;
-import com.dt.wechatptf.entity.Member;
 import com.dt.wechatptf.util.ReturnMessage;
 
 public class ActivityDAO {
